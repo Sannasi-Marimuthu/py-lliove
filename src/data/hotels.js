@@ -18,10 +18,13 @@ export const hotelsData = [
     id: 2,
     tag: "",
     slideImg: [
-      "https://i.pinimg.com/236x/1f/de/11/1fde11c29f8d0930aa3763ade8d5a0f5.jpg",
       "https://content.jdmagicbox.com/v2/comp/dindigul/b6/9999px451.x451.190905160343.j5b6/catalogue/blue-moon-residency-batlagundu-dindigul-lodging-services-rs-1000-and-below--t5qu05xr0y-250.jpg",
-      "https://media.istockphoto.com/id/1301116848/photo/the-beautiful-bedroom-interior-design-and-lamp-and-side-table-empty-wall-background.jpg?s=612x612&w=0&k=20&c=FDdQyHFZMleNKItLrq0jTNpAplt-TjmdRbKZbgRMCAM=",
-    ],
+       ],
+    // slideImg: [
+    //   "https://i.pinimg.com/236x/1f/de/11/1fde11c29f8d0930aa3763ade8d5a0f5.jpg",
+    //   "https://content.jdmagicbox.com/v2/comp/dindigul/b6/9999px451.x451.190905160343.j5b6/catalogue/blue-moon-residency-batlagundu-dindigul-lodging-services-rs-1000-and-below--t5qu05xr0y-250.jpg",
+    //   "https://media.istockphoto.com/id/1301116848/photo/the-beautiful-bedroom-interior-design-and-lamp-and-side-table-empty-wall-background.jpg?s=612x612&w=0&k=20&c=FDdQyHFZMleNKItLrq0jTNpAplt-TjmdRbKZbgRMCAM=",
+    // ],
     img: "https://media.istockphoto.com/id/1301116848/photo/the-beautiful-bedroom-interior-design-and-lamp-and-side-table-empty-wall-background.jpg?s=612x612&w=0&k=20&c=FDdQyHFZMleNKItLrq0jTNpAplt-TjmdRbKZbgRMCAM=",
     title: "Cultural Heritage Tour",
     location: "0.6 km from city centre",
@@ -140,9 +143,9 @@ export const hotelsData = [
     id: 10,
     tag: "",
     slideImg: [
+      
       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/631861856.jpg?k=0c4af547728526105ff028db529ca31b96d61b63d38c3838d20f587dd93c3dc9&o=&hp=1",
-      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/631861856.jpg?k=0c4af547728526105ff028db529ca31b96d61b63d38c3838d20f587dd93c3dc9&o=&hp=1",
-      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/631861856.jpg?k=0c4af547728526105ff028db529ca31b96d61b63d38c3838d20f587dd93c3dc9&o=&hp=1",
+      
     ],
     title: "Staycity Aparthotels",
     img: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/631861856.jpg?k=0c4af547728526105ff028db529ca31b96d61b63d38c3838d20f587dd93c3dc9&o=&hp=1",
