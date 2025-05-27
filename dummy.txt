@@ -1,0 +1,353 @@
+import React from "react";
+import './similarHotel.css'
+
+const SimilarHotels = () => {
+  return (
+    <>
+      <div className="wrapper">
+        <div className="tags">
+          <div className="tag">Best Package</div>
+          <div className="tag">Free Cancelation</div>
+          <div className="tag">Book with ₹0 Payment</div>
+        </div>
+        <div className="green-banner">
+          Similar to in near by
+          <br />
+          <small>
+            Enjoy benefits worth <strong>classNameic</strong> &{" "}
+            <strong>Executive</strong>…
+          </small>
+        </div>
+
+        <div className="container">
+          {/* Left Section  */}
+          <div className="left">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+              alt="Room Image"
+            />
+            <div className="image-caption">View all images</div>
+            <div className="hotel-name">Hablis</div>
+            <div className="details">
+              (323 sq.ft)(30 sq.mt) City View 1 king bed or 2 TWIN bed (S)
+            </div>
+            <div className="features">
+              <div>• Iron / Ironing Board</div>
+              <div>• Daily Housekeeping</div>
+              <div>• Bathroom</div>
+              <div>• In-room Dining</div>
+              <div>• Air Conditioning</div>
+              <div>• Free Wi-Fi</div>
+            </div>
+            <a
+              href="#"
+              className="more-details"
+              data-bs-toggle="modal"
+              data-bs-target="#detailsModal"
+            >
+              More Details
+            </a>
+          </div>
+
+          {/* Right Section  */}
+          <div className="right">
+            <div className="badge">Best package</div>
+            <div className="title">Room With free Cancelation</div>
+            <div className="booking-info">
+              Book @ 0 available
+              <strong>Risk Free Booking!</strong>
+            </div>
+            <div className="rate-info">
+              Best rate
+              <br />
+              Free Cancelation before 16 May 10:59 PM
+            </div>
+            <div className="price-section">
+              <div className="price">classNameic ₹2,499</div>
+              <button className="select-button">SELECT ROOM</button>
+            </div>
+            <div className="offer-note">
+              Axis Bank Credit Card Offer - Get INR 4098 OFF!
+              <br />
+              <a href="#">SELECT TO AVAIL</a>
+            </div>
+            <div className="amenities">
+              <h3>Amenities</h3>
+              <ul>
+                <li>Guaranteed Early check-in & Late check-out</li>
+                <li>Complimentary Two-way Airport Transfer</li>
+                <li>Signature Activities & Experiences</li>
+                <li>Breakfast included (you’re saving ₹1337)</li>
+              </ul>
+              <a
+                href="#"
+                className="more-details"
+                data-bs-toggle="modal"
+                data-bs-target="#propertyRulesModal"
+              >
+                More Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*  Modal */}
+      <div
+        className="modal fade"
+        id="detailsModal"
+        tabindex="-1"
+        aria-labelledby="detailsModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered modal-lg">
+          <div className="modal-content rounded-4 shadow p-4">
+            {/* Modal Header with Close Button  */}
+            <div className="d-flex justify-content-between align-items-start mb-3">
+              <div>
+                <h5 className="fw-semibold mb-1">Room With Free Cancellation</h5>
+                <div className="text-muted">Cancellation Policy</div>
+                <div className="text-success fw-semibold mt-2">
+                  Free Cancellation till 21 May, 12:29 PM
+                </div>
+              </div>
+              <div className="d-flex flex-column align-items-end">
+                <button
+                  type="button"
+                  className="btn-close ms-2"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+                <img
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                  alt="Room"
+                  className="img-thumbnail mt-2"
+                  style="width:100px; height:auto; border-radius: 8px;"
+                />
+              </div>
+            </div>
+
+            {/* Modal Body  */}
+            <div className="modal-body pt-0">
+              {/* Progress Bar */}
+              <div className="my-3">
+                <div className="d-flex justify-content-between small mb-1">
+                  <span>Now</span>
+                  <span>
+                    17 May
+                    <br />
+                    <small className="text-muted">12:29 PM</small>
+                  </span>
+                  <span>
+                    21 May <br /> <small className="text-muted">12:29 PM</small>
+                  </span>
+                </div>
+                <div className="progress" style="height: 20px;">
+                  <div
+                    className="progress-bar bg-success text-white fw-semibold"
+                    role="progressbar"
+                    style="width: 100%"
+                  >
+                    100% Refund
+                  </div>
+                </div>
+              </div>
+
+              {/* Description  */}
+              <p className="mt-3 mb-3 small">
+                Free Cancellation <strong>(100% refund)</strong> if you cancel
+                this booking before
+                <br />
+                <strong>21 May, 12:29 PM</strong>
+              </p>
+              <p className="small mb-2">
+                Cancellations post that will be subject to a fee as follows
+              </p>
+
+              {/* Table */}
+              <table className="table table-bordered text-center small">
+                <thead className="table-light">
+                  <tr>
+                    <th scope="col">DATE</th>
+                    <th scope="col">FEE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Before 21 May, 12:29 PM</td>
+                    <td>0.0% of booking amount</td>
+                  </tr>
+                  <tr>
+                    <td>After 21 May, 12:30 PM</td>
+                    <td>100.0% of booking amount</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              {/* Footer note */}
+              <p className="text-muted small mt-3">
+                Cancellations are only allowed before the Check-In Time.
+                <br />
+                All time mentioned above is in Destination Time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Modal  */}
+      <div
+        className="modal fade"
+        id="propertyRulesModal"
+        tabindex="-1"
+        aria-labelledby="propertyRulesLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered modal-lg">
+          <div className="modal-content rounded-4 shadow">
+            {/* Header  */}
+            <div className="modal-header">
+              <h5 className="modal-title fw-semibold" id="propertyRulesLabel">
+                Property Rules & Information
+              </h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            {/* Body  */}
+            <div className="modal-body" style="max-height: 75vh; overflow-y: auto;">
+              {/* Section */}
+              <div className="mb-4">
+                <h6 className="fw-bold">Must Read Rules</h6>
+                <ul className="small mb-0">
+                  <li>Primary guest must be at least 18 years of age</li>
+                  <li>
+                    Passport, Aadhaar and Driving License are accepted as ID
+                    proof(s)
+                  </li>
+                  <li>Pets are not allowed</li>
+                  <li>Smoking within the premises is not allowed</li>
+                  <li>Guests with fever are not allowed</li>
+                </ul>
+              </div>
+
+              {/* Guest Profile */}
+              <div className="mb-4">
+                <h6 className="fw-bold">Guest Profile</h6>
+                <ul className="small mb-0">
+                  <li>Unmarried couples allowed</li>
+                  <li>
+                    Guests below 18 years of age are not allowed at the property
+                  </li>
+                </ul>
+              </div>
+
+              {/* Hourly Guest Profile  */}
+              <div className="mb-4">
+                <h6 className="fw-bold">Guest Profile (Hourly)</h6>
+                <ul className="small mb-0">
+                  <li>Unmarried couples are allowed in hourly stay rooms</li>
+                </ul>
+              </div>
+
+              {/* ID Proof  */}
+              <div className="mb-4">
+                <h6 className="fw-bold">ID Proof Related</h6>
+                <ul className="small mb-0">
+                  <li>
+                    Passport, Aadhaar and Driving License are accepted as ID
+                    proof(s)
+                  </li>
+                  <li>Local IDs are allowed</li>
+                </ul>
+              </div>
+
+              {/* Alcohol */}
+              <div className="mb-4">
+                <h6 className="fw-bold">Smoking/Alcohol consumption Rules</h6>
+                <ul className="small mb-0">
+                  <li>
+                    Alcohol consumption is not allowed within the property
+                    premises
+                  </li>
+                  <li>Smoking within the premises is not allowed</li>
+                </ul>
+              </div>
+
+              {/* Food  */}
+              <div className="mb-4">
+                <h6 className="fw-bold">Food Arrangement</h6>
+                <ul className="small mb-0">
+                  <li>Non veg food is allowed</li>
+                  <li>Outside food is not allowed</li>
+                  <li>Room Service is available at the property</li>
+                  <li>Dining Area available</li>
+                </ul>
+              </div>
+
+              {/* Accessibility  */}
+              <div className="mb-4">
+                <h6 className="fw-bold">Property Accessibility</h6>
+                <ul className="small mb-0">
+                  <li>
+                    This property is accessible to guests who use a wheelchair
+                  </li>
+                  <li>Guests are requested to carry their own wheelchair</li>
+                </ul>
+              </div>
+
+              {/* Pets  */}
+              <div className="mb-4">
+                <h6 className="fw-bold">Pet(s) Related</h6>
+                <ul className="small mb-0">
+                  <li>Pets are not allowed</li>
+                  <li>There are no pets living on the property</li>
+                </ul>
+              </div>
+
+              {/* Other Rules  */}
+              <div className="mb-4">
+                <h6 className="fw-bold">Other Rules</h6>
+                <ul className="small mb-0">
+                  <li>Does not allow private parties or events</li>
+                  <li>
+                    Guests are requested not to invite outside visitors in the
+                    room during their stay
+                  </li>
+                  <li>
+                    Guests are requested to wear appropriate clothes inside the
+                    property
+                  </li>
+                </ul>
+              </div>
+
+              {/* Child Policy  */}
+              <div className="mb-4">
+                <h6 className="fw-bold">Child & Extra Bed Policy</h6>
+                <ul className="small mb-0">
+                  <li>
+                    No extra bed will be provided to accommodate any child
+                    included in the booking
+                  </li>
+                  <li>
+                    Extra bed will not be provided to accommodate any additional
+                    guest included in the booking
+                  </li>
+                  <li>
+                    INR 1000 will be charged for an extra mattress per guest (To
+                    be paid at the property)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default SimilarHotels;

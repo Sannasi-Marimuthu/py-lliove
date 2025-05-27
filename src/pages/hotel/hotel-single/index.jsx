@@ -10,6 +10,7 @@ import { useParams } from "react-router-dom";
 
 import MetaComponent from "../../../components/common/MetaComponent";
 import HotelTabs from "../../../components/hotel-single/HotelTabs";
+import SimilarHotels from "../../../components/hotel-single/similarHotels/SimilarHotels";
 
 const metadata = {
   title:
@@ -56,6 +57,12 @@ const HotelSingleDynamic = () => {
         <div className="container">
           <div className="col-12 ">
             <HotelTabs />
+          </div>
+        </div>
+
+        <div className="container">
+          <div className="col-12">
+            <SimilarHotels />
           </div>
         </div>
 
