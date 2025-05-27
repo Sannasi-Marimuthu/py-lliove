@@ -15,9 +15,9 @@ const HotelProperties = () => {
 
 
             <div className="row " style={{padding:"15px"}}>
-              <div className="col-md-auto">
-                <div className="cardImage ratio ratio-1:1 w-250 md:w-1/1 rounded-4">
-                  <div className="cardImage__content">
+              <div className="col-md-auto" >
+                <div className="cardImage ratio ratio-1:1 w-250 md:w-1/1 rounded-4"  >
+                  <div className="cardImage__content" >
                     <div className="cardImage-slider rounded-4  custom_inside-slider">
                       <Swiper
                         className="mySwiper"
@@ -33,7 +33,7 @@ const HotelProperties = () => {
                               className="rounded-4 col-12 js-lazy"
                               src={slide}
                               alt="image"
-                              style={{height:'220px'}}
+                              style={{height:'420px'}}
                             />
                           </SwiperSlide>
                         ))}
