@@ -1,0 +1,89 @@
+import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, EffectCoverflow } from "swiper";
+import { signatureData } from "../../data/signature";
+// import isTextMatched from "../../utils/isTextMatched";
+
+const Signature = () => {
+  return (
+    <>
+      <div className="swiper-container">
+        <Swiper
+          effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+        //   rotate: 50,
+       rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+          breakpoints={{
+            560: {
+              slidesPerView: 2.5,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          className="swiper"
+        >
+          {signatureData.slice(0, 5).map((item) => (
+            <SwiperSlide key={item?.id} className="swiper-slide" style={{width:"25%", marginBlock:"20%"}}>
+              {/* <Link
+                to={`/#`}
+                className="hotelsCard -type-1 hover-inside-slider"
+                data-aos="fade"
+                data-aos-delay={item.delayAnimation}
+              > */}
+                <div className="slide-content">
+                  <svg width="0" height="0">
+                    <defs>
+                      <clipPath
+                        id="wave-clip"
+                        clipPathUnits="objectBoundingBox"
+                      >
+                        <path d="M0,1 C0.2,0.4 0.9,0.5 1,0 L1,1 L0,1 Z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <div className="signature-card">
+                    {item?.slideImg?.map((slide, i) => (
+                      <img className="rounded-4  js-lazy" src={slide} />
+                    ))}
+
+                    <div class="wave"></div>
+                    <div class="wave-text">
+                      <h4>{item?.title}</h4>
+                      <p>
+                        {item?.para1}
+                        <br />
+                       <span style={{marginBottom:"-5px"}}> {item?.para2}</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              {/* </Link> */}
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      
+
+      {/* End navigation and pagination */}
+    </>
+  );
+};
+
+export default Signature;
