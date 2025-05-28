@@ -7,6 +7,7 @@ import HotelProperties from "../../../components/hotel-list/HotelProperties";
 import Pagination from "../../../components/hotel-list/common/Pagination";
 import Sidebar from "../../../components/hotel-list/Sidebar";
 import MetaComponent from "../../../components/common/MetaComponent";
+import './style.css'
 
 const metadata = {
   title: "Hotel List || Py Ollive -- Hotel Rooms & Conference Hall Booking ",
@@ -26,8 +27,8 @@ const HotelList = () => {
       {/* End Header */}
       <div style={{ backgroundColor: "#ecf0f7" }}>
         <section
-          className=" pb-40"
-          style={{ marginLeft: "10em", marginTop: "5em" }}
+          className="hotel-list-search "
+          // style={{ marginLeft: "10em", marginTop: "5em" }}
         >
           <div className="container">
             <div className="row">

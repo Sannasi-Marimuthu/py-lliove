@@ -1,0 +1,33 @@
+.list-search{
+    margin-inline:5em;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0px 0px 25px 25px ;
+     box-shadow: 0 2px 3px 0px #686f68
+    }
+.list-search2{
+      margin-inline:10em;
+    width: 80%;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    /* border-radius: 0px 0px 25px 25px ; */
+     box-shadow: 0 2px 3px 0px #686f68
+}
+@media (max-width:767px){
+    .mainSearch{
+        margin-inline: 2em;
+        width: 100%;
+        padding: 20px;
+        
+    }
+    .searchMenu-date {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    .list-search-btn {
+        font-size: 14px;
+        margin-top: 20px;
+
+    }
+}

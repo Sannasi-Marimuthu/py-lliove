@@ -45,14 +45,17 @@ const SearchBar = () => {
           data-bs-auto-close="true"
           data-bs-offset="0,22"
         >
-          <h4 className="text-15 fw-500 ls-2 lh-16">Location</h4>
+           <span className="badge rounded-pill" style={{ color:"#000", fontWeight:"450" }}>
+                Location
+                    </span>
           <div
             className="text-15 text-light-1 ls-2 lh-16"
             style={{
-              backgroundColor: "#eff8f4",
-              padding: "15px",
+                backgroundColor: "#d9e1ee",
+              padding: "5px",
               borderRadius: "10px",
-              width: "250px",
+              width: "auto",
+              color:"#4b5e4b"
             }}
           >
             <div className="d-flex items-center">
