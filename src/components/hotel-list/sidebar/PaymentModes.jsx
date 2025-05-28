@@ -14,12 +14,12 @@ const PaymentModes = () => {
               <div className="form-checkbox__mark">
                 <div className="form-checkbox__icon icon-check" />
               </div>
-              <div className="text-15 ml-10">{neighborhood.name}</div>
+              <div className="text-14 ml-10">{neighborhood.name}</div>
             </div>
           </div>
           {/* End .col */}
           <div className="col-auto">
-            <div className="text-15 text-light-1">{neighborhood.count}</div>
+            <div className="text-14 text-light-1"> {"("} {neighborhood.count} {")"} </div>
           </div>
         </div>
       ))}

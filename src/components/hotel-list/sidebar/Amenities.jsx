@@ -19,12 +19,12 @@ const Amenities = () => {
               <div className="form-checkbox__mark">
                 <div className="form-checkbox__icon icon-check" />
               </div>
-              <div className="text-15 ml-10">{checkbox.label}</div>
+              <div className="text-14 ml-10">{checkbox.label}</div>
             </div>
           </div>
           {/* End col-auto */}
           <div className="col-auto">
-            <div className="text-15 text-light-1">{checkbox.count}</div>
+            <div className="text-14 text-light-1"> {"("} {checkbox.count} {")"} </div>
           </div>
         </div>
       ))}

@@ -13,7 +13,7 @@ const DealsFilter = () => {
             <div className="form-checkbox__mark">
               <div className="form-checkbox__icon icon-check" />
             </div>
-            <div className="text-15 ml-10">{deal.label}</div>
+            <div className="text-14 ml-10">{deal.label}</div>
           </div>
         </div>
       ))}

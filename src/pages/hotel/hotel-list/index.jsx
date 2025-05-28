@@ -70,7 +70,7 @@ const HotelList = () => {
                   {/* End offcanvas header */}
 
                   <div className="offcanvas-body">
-                    <aside className="sidebar y-gap-40  xl:d-block">
+                    <aside className="sidebar y-gap-40  xl:d-block mt-1">
                       <Sidebar />
                     </aside>
                   </div>

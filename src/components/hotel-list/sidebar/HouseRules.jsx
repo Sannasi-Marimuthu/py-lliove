@@ -20,7 +20,7 @@ const HouseRules = () => {
             </div>
           </div>
           <div className="col-auto">
-            <div className="text-15 text-light-1">{amenity.count}</div>
+            <div className="text-14 text-light-1"> {"("} {amenity.count} {")"} </div>
           </div>
         </div>
       ))}

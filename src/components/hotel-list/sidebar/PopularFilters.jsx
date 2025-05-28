@@ -22,11 +22,11 @@ const popularFilters = () => {
               <div className="form-checkbox__mark">
                 <div className="form-checkbox__icon icon-check" />
               </div>
-              <div className="text-15 ml-10">{filter.label}</div>
+              <div className="text-14 ml-10">{filter.label}</div>
             </div>
           </div>
           <div className="col-auto">
-            <div className="text-15 text-light-1">{filter.count}</div>
+            <div className="text-14 text-light-1">{"("}{filter.count}{")"}</div>
           </div>
         </div>
       ))}
