@@ -29,7 +29,7 @@ const TrendingSearch = () => {
       </h3>{" "}
             
           <div className="item">
-            <img src="/img/home_icon/beach.png" />
+            <img src="/img/home_icon/beach.png"  />
             <span>Beach Getaways In Goa</span>
           </div>
 
@@ -39,7 +39,7 @@ const TrendingSearch = () => {
           </div>
 
           <div className="item">
-            <img src="/img/home_icon/nature.png" width={150} />
+            <img src="/img/home_icon/nature.png" />
             <span>Nature Retreats In Kochi</span>
           </div>
 

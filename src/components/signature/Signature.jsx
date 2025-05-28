@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectCoverflow } from "swiper";
+import { Navigation, EffectCoverflow } from "swiper";
+// import { Navigation, Pagination, EffectCoverflow } from "swiper";
 import { signatureData } from "../../data/signature";
 // import isTextMatched from "../../utils/isTextMatched";
 
@@ -8,6 +9,8 @@ const Signature = () => {
   return (
     <>
       <div className="swiper-container">
+
+        <h1 className="title-sign">Signature</h1>
         <Swiper
           effect={'coverflow'}
         grabCursor={true}
@@ -22,8 +25,9 @@ const Signature = () => {
 
           slideShadows: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        // pagination={true}
+        // modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow]}
           breakpoints={{
             560: {
               slidesPerView: 2.5,
@@ -35,7 +39,7 @@ const Signature = () => {
               slidesPerView: 3,
             },
           }}
-          className="swiper"
+       className="sign-swiper"
         >
           {signatureData.slice(0, 5).map((item) => (
             <SwiperSlide key={item?.id} className="swiper-slide" style={{width:"25%", marginBlock:"20%"}}>

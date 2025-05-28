@@ -6,10 +6,10 @@ import Hotels from "../../components/hotels/Hotels";
 import Navbar from "../../components/navbar/Navbar";
 import Signature from "../../components/signature/Signature";
 import "./style/hero.css";
-import "./signature.css";
 import { Link } from "react-router-dom";
 import LocationHome from "../../components/hotel-list/common/LocationHome";
 import TrendingSearch from "../../components/home/TrendingSearch";
+import UniqueSelling from "../../components/home/UniqueSelling";
 
 const MainHome = () => {
   return (
@@ -217,124 +217,44 @@ const MainHome = () => {
       </div>
 
       {/* Popular hotels */}
-      <div className="container mt-5">
-        <div className="relative overflow-hidden pt-40 sm:pt-20 js-section-slider item_gap-x30">
+      <div className="container" style={{ marginTop: "5em" }}>
+        <div className="relative overflow-hidden  js-section-slider item_gap-x30">
           <Hotels />
         </div>
       </div>
 
       {/* signature start */}
       <div className="container mt-5">
-        <div className="relative overflow-hidden pt-40 sm:pt-20 js-section-slider item_gap-x30">
+        <div className="relative overflow-hidden js-section-slider item_gap-x30">
           <Signature />
         </div>
       </div>
 
       {/* signature end */}
       {/* Unique selling proposition */}
-
-      <div
-        className="container  -w-1500  "
-        style={{
-          marginTop: "3rem",
-          backgroundColor: "#e6ffe6",
-          boxShadow: "2px 2px 2px 3px #888888",
-          borderRadius: "20px",
-          padding: "20px",
-        }}
-      >
-        <div>
-          <h1 style={{ marginLeft: "20px", color: "#4b5e4b" }}>
-            Unique Selling Proposition
-          </h1>
+      <div className="container" style={{ marginTop: "2rem" }}>
+        <div
+          className="relative overflow-hidden js-section-slider item_gap-x30"
+          style={{ boxShadow: "0 2px 3px 0px #686f68", borderRadius: "20px" }}
+        >
+          <UniqueSelling />
         </div>
-
-        <div className="row y-gap-30 items-center justify-between mt-10">
-          <div>
-            <div className="d-flex justify-content-evenly">
-              <h4
-                className="border-light  py-10 bg-light rounded-3"
-                style={{
-                  width: "40%",
-                  textAlign: "center",
-                  boxShadow: "2px 2px  #888888",
-                }}
-              >
-                Single Price
-              </h4>
-              <h4
-                className="border-light  py-10 bg-light rounded-3"
-                style={{
-                  width: "40%",
-                  textAlign: "center",
-                  boxShadow: "2px 2px #888888",
-                }}
-              >
-                Free Refreshment Stay
-              </h4>
-            </div>
-            <div className="d-flex justify-content-evenly mt-3">
-              <h4
-                className="border-light  py-10 bg-light rounded-3"
-                style={{
-                  width: "40%",
-                  textAlign: "center",
-                  boxShadow: "2px 2px #888888",
-                }}
-              >
-                Free Cancelation
-              </h4>
-              <h4
-                className="border-light  py-10 bg-light rounded-3"
-                style={{
-                  width: "40%",
-                  textAlign: "center",
-                  boxShadow: "2px 2px #888888",
-                }}
-              >
-                Technological Advanced gym
-              </h4>
-            </div>
-            <div className="d-flex justify-content-evenly mt-3 mb-4">
-              <h4
-                className="border-light  py-10 bg-light rounded-3"
-                style={{
-                  width: "40%",
-                  textAlign: "center",
-                  boxShadow: "2px 2px #888888",
-                }}
-              >
-                Medical Assistant
-              </h4>
-              <h4
-                className="border-light  py-10 bg-light rounded-3"
-                style={{
-                  width: "40%",
-                  textAlign: "center",
-                  boxShadow: "2px 2px #888888",
-                }}
-              >
-                Cutting Edge Conference Room
-              </h4>
-            </div>
-          </div>
-          {/* End .col */}
-        </div>
-        {/* End .row */}
       </div>
+
       {/* Image */}
 
       <div
-        className="container p-5 text-center bg-image"
-        style={{
-          backgroundImage:
-            "url('https://rotary-linens.com/cdn/shop/files/resort-supplies_1880x.jpg?v=1716778201')",
-          height: 400,
+        className="container text-center"      >
+        <img src="https://rotary-linens.com/cdn/shop/files/resort-supplies_1880x.jpg?v=1716778201" alt=""  style={
+          {
+            height: 300,
           borderRadius: 10,
           marginTop: "50px",
           width: "100%",
-        }}
-      ></div>
+          
+          }
+        }/>
+      </div>
       <DefaultFooter />
     </div>
   );

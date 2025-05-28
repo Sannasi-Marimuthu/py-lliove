@@ -36,14 +36,7 @@ const Hotels = () => {
         }}
       >
         {hotelsData.slice(0, 8).map((item) => (
-          <SwiperSlide
-            key={item?.id}
-            style={{
-              backgroundColor: "#fff",
-              padding: "25px",
-              borderRadius: "20px",
-            }}
-          >
+          <SwiperSlide key={item?.id} className="swiper-slide-hotel">
             <Link
               to={`/hotel-single-v1/${item.id}`}
               className="hotelsCard -type-1 hover-inside-slider"
@@ -52,8 +45,8 @@ const Hotels = () => {
             >
               <div className="hotelsCard__image">
                 <div className="cardImage ratio ratio-1:1">
-                  <div className="cardImage__content" style={{marginTop:'10em'}}>
-                    <div className="cardImage-slider rounded-4 overflow-hidden custom_inside-slider">
+                  <div className="cardImage__content">
+                    <div className="cardImage-slider  overflow-hidden custom_inside-slider">
                       <Swiper
                         className="mySwiper"
                         modules={[Pagination, Navigation]}
@@ -67,7 +60,6 @@ const Hotels = () => {
                             <img
                               className="rounded-4 col-12 js-lazy"
                               src={slide}
-                              // src="https://www.maurya.com/wp-content/uploads/2017/09/Svasara-Suite-thumb.jpg"
                               alt="image"
                             />
                           </SwiperSlide>
@@ -84,40 +76,44 @@ const Hotels = () => {
                   className="text-blue-1 text-dark"
                   style={{
                     border: "1px solid black",
-                    borderRadius: "20px",
-                    paddingInline: "15px",
+                    borderRadius: "15px",
+                    paddingInline: "10px",
                   }}
                 >
-                  <h5>{item?.basic}</h5>
+                  <h6>{item?.basic}</h6>
                 </div>
                 <div
                   className="text-blue-1  mx-2"
                   style={{
                     border: "1px solid gray",
-                    borderRadius: "20px",
-                    paddingInline: "15px",
+                    borderRadius: "15px",
+                    paddingInline: "10px",
                   }}
                 >
-                  <h5 style={{ color: "gray" }}>{item?.premium}</h5>
+                  <h6 style={{ color: "gray" }}>{item?.premium}</h6>
                 </div>
               </div>
 
               <div className="hotelsCard__content mt-10">
-                <h4 className="hotelsCard__title text-dark-1  lh-16 fw-500">
+                <h5 className="hotelsCard__title text-dark-1  lh-16 fw-600">
                   <span>{item?.title}</span>
-                </h4>
+                </h5>
                 <div className="d-flex justify-content-between">
                   <div className="d-flex flex-column">
                     <p
                       style={{
-                        color: "#454545",
-                        fontSize: "20px",
-                        fontWeight: "bold",
+                        color: "#000",
+                        fontSize: "16px",
                       }}
                     >
                       Destination
                     </p>
-                    <p className="text-dark-1 lh-14 text-14 mt-5">
+                    <p
+                      className="text-dark-1 lh-14 text-14 mt-5"
+                      style={{
+                        color: "#454545",
+                      }}
+                    >
                       <i className="icon-location text-15 mr-10" />
                       {item?.location}
                     </p>
@@ -125,14 +121,18 @@ const Hotels = () => {
                   <div className="d-flex flex-column">
                     <p
                       style={{
-                        color: "#454545",
-                        fontSize: "20px",
-                        fontWeight: "bold",
+                        color: "#000",
+                        fontSize: "16px",
                       }}
                     >
                       Duration
                     </p>
-                    <p className="text-dark-1 lh-14 text-14 mt-5">
+                    <p
+                      className="text-dark-1 lh-14 text-14 mt-5"
+                      style={{
+                        color: "#454545",
+                      }}
+                    >
                       <i className="icon-clock text-15 mr-10" />{" "}
                       {item?.duration}
                     </p>
@@ -143,15 +143,22 @@ const Hotels = () => {
 
                 <div className="d-flex justify-content-between items-center">
                   <div className="mt-5 d-flex flex-column">
-                    <div className="fw-500">Starting from </div>
-                    <div className="text-blue-1 text-bold">
-                      <h2>$ {item?.price}</h2>
+                    <div className="text-14" style={{ color: "#454545" }}>
+                      Start from{" "}
+                    </div>
+                    <div className=" text-bold">
+                      <h3>$ {item?.price}</h3>
                     </div>
                   </div>
                   <button
                     href="#"
-                    className="button -dark-1 bg-blue-1 text-white w-50 rounded-10"
-                    style={{ height: "3em", borderRadius: "20px" }}
+                    className="button bg-blue-1 text-white  rounded-10"
+                    style={{
+                      height: "40px",
+                      borderRadius: "20px",
+                      width: "100px",
+                      backgroundColor: "#4c5e4c",
+                    }}
                   >
                     Book Now
                   </button>
