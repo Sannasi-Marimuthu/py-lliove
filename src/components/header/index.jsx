@@ -33,8 +33,8 @@ const Header = () => {
             <div className="col-auto">
               <div className="d-flex items-center">
                 <Link to="/" className="header-logo mr-50">
-                  <img src="/img/general/pylliove_logo1.png" alt="logo icon" />
-                  <img src="/img/general/pylliove_logo1.png" alt="logo icon" />
+                  <img src="/img/general/py-ollive-logo.png" alt="logo-icon" />
+                  <img src="/img/general/py-ollive-logo.png" alt="logo-icon" />
                 </Link>
                 {/* End logo */}
 

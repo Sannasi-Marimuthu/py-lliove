@@ -75,40 +75,50 @@ const GuestSearch = () => {
         aria-expanded="false"
         data-bs-offset="0,22"
       >
-        <h4 className="text-15 fw-500 ls-2 lh-16">Guest</h4>
+       <span className="badge rounded-pill" style={{backgroundColor:"#4b5e4b", color:"#fff", }}>
+                 Guests & Rooms*
+                    </span>
         <div
           className="text-15 text-light-1 ls-2 lh-16"
           style={{
-            backgroundColor: "#eff8f4",
-            padding: "15px",
-            borderRadius: "10px",
-            width: "330px",
+           backgroundColor: "#d9e1ee",
+              padding: "8px",
+              borderRadius: "10px",
+              width: "content-fit",
+              color:"#4b5e4b",
+              display:"flex",
+              justifyContent:"space-around",
+              flexWrap:'wrap'
           }}
         >
           <span className="js-count-adult">
             <img
-              src="https://cdn-icons-png.freepik.com/256/13748/13748957.png?semt=ais_hybrid"
+              src="/img/general/adult.png"
               alt=""
               width={20}
             />{" "}
-            {guestCounts.Adults}
-          </span>{" "}
-          adults -{" "}
+            {guestCounts.Adults}  adults {" "}
+          </span>
+         
           <span className="js-count-child">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvOhkgSoNQdaaboxQCY3aHppuuvUeBQ2205g&s"
+              src="/img/general/child.png"
               alt=""
               width={15}
             />{" "}
-           
-            {guestCounts.Children}
+            {guestCounts.Children}  childeren 
           </span>{" "}
-          childeren - <span className="js-count-room">  <img
-              src="https://static-00.iconduck.com/assets.00/hotel-accommodation-icon-2048x2048-lex4u1xc.png"
+        
+          <span className="js-count-room">
+            {" "}
+            <img
+              src="/img/general/room.png"
               alt=""
               width={20}
-            />{" "}{guestCounts.Rooms}</span>{" "}
-          room
+            />{" "}
+            {guestCounts.Rooms}  room
+          </span>{" "}
+         
         </div>
       </div>
       {/* End guest */}

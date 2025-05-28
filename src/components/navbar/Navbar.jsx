@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
+import "./navbar.css";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -22,10 +23,10 @@ const Navbar = () => {
 
   return (
     <>
-      <header className={`header -type-5 ${navbar ? "-header-5-sticky" : ""}`}>
+      <header className={` header -type-5 ${navbar ? "-header-5-sticky" : ""}`}>
         <div className="header__container container">
-          <div className="row justify-between items-center">
-            <div className="col-auto mobile-col">
+          <div className=" row justify-between items-center">
+            <div className=" col-auto mobile-col">
               <div className="d-flex items-center">
                 <div className="mr-20 d-flex items-center">
                   <div className="mr-15 d-none md:d-flex">
@@ -57,8 +58,8 @@ const Navbar = () => {
                 {/* humberger menu */}
 
                 <Link to={"/hotelList"} className="header-logo mr-20">
-                  <img src="/img/general/pylliove_logo1.png" alt="logo icon" />
-                  <img src="/img/general/pylliove_logo1.png" alt="logo icon" />
+                  <img src="/img/general/py-ollive-logo.png" alt="logo icon" />
+                  <img src="/img/general/py-ollive-logo.png" alt="logo icon" />
                 </Link>
                 {/* End logo */}
               </div>
@@ -72,17 +73,26 @@ const Navbar = () => {
                 <div className="header__buttons d-flex items-center is-menu-opened-hide mt-30">
                   <Link
                     to="/#"
-                    className=" h-50 px-20 fw-400 text-14 -blue-1 bg-white text-dark-1 sm:d-none"
-                  ><img src="https://static-00.iconduck.com/assets.00/profile-major-icon-1024x1024-9rtgyx30.png" alt="" style={{width:"25px", marginRight:"5px"}}/>
-                      My Trips
+                    className=" h-50 px-20 fw-400 text-14 -blue-1 text-dark-1 sm:d-none"
+                  >
+                    <img
+                      src="/img/general/profile-icon.png"
+                      alt=""
+                      style={{ width: "25px", marginRight: "5px" }}
+                    />
+                    My Trips
                   </Link>
                   <Link
                     to="/signup"
-                    className="h-50 fw-400 text-14 -blue-1 bg-white text-dark-1 sm:d-none"
-                  ><img src="/img/general/pylliove_icon.png" alt="" style={{width:"35px"}}/>
-                      Sign In 
+                    className="h-50 fw-400 text-14 -blue-1 text-dark-1 sm:d-none"
+                  >
+                    <img
+                      src="/img/general/pylliove_icon.png"
+                      alt=""
+                      style={{ width: "35px" }}
+                    />
+                    Sign In
                   </Link>
-                 
                 </div>
                 {/* End btn-group */}
               </div>
@@ -93,7 +103,7 @@ const Navbar = () => {
         </div>
         {/* End header_container */}
       </header>
-      {/* // End header */}
+      {/* End header */}
     </>
   );
 };

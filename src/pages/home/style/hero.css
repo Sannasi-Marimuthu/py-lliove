@@ -1,0 +1,255 @@
+.hero-section1 {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.inner-text1 {
+  position: absolute;
+}
+
+.hero-section1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.content-overlay1 {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 20px;
+  overflow: visible;
+  margin: 0 auto;
+}
+
+.video-content1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  border-radius: 50px;
+}
+
+.top-left-text1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 252px;
+  height: 238px;
+  background: white;
+  color: #2f4f4f;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 30px 20px;
+  z-index: 11;
+  line-height: 1.5rem;
+  clip-path: url(#waveClip);
+  border-radius: 50px 0 0 0;
+  box-shadow: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(76, 94, 76, 1) 100%
+  );
+}
+
+.card-container1 {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.card1 {
+  position: absolute;
+  bottom: -36rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  max-width: 90vw;
+  padding: 10px;
+  background-image: linear-gradient(to bottom right, #fff, #e2e7f2);
+  box-shadow: 0 5px 5px 3px #686f68;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 12;
+}
+
+.card1 .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card1 img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.card1 .badge {
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.card2 {
+  background: rgb(64, 78, 62, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 20px;
+  border-radius: 50px 0 0 50px;
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  height: 100px;
+  width: 400px;
+  color: white;
+  font-size: 15px;
+  text-align: right;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 4px 6px rgba(0, 0, 0, 0.16),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 11;
+}
+
+@media (max-width: 767px) {
+  .hero-section1 {
+    height: 400px;
+  }
+  .top-left-text1 {
+    font-size: 1.8rem;
+  }
+  .card1 {
+    position: static;
+    width: 100%;
+    border-radius: 20px;
+    transform: none;
+    margin-top: 18em;
+  }
+  .card1 img {
+    width: 35px;
+    height: 35px;
+  }
+  .card1 .badge {
+    font-size: 0.7rem;
+  }
+  .card2 {
+    width: 280px;
+    height: 100px;
+    bottom: 60px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 30px 0 0 30px;
+  }
+  .main-search {
+    margin-top: 10em;
+  }
+}
+
+/* Trending Search At Py-Olliv start */
+
+.heading {
+  margin-right: -30em;
+  text-align: center;
+  margin-top: -1.5em;
+}
+
+.section {
+  display: flex;
+  align-items: stretch;
+  background: #eff8f3;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  margin: 40px auto;
+  transform: rotate(180deg);
+  z-index: 9;
+}
+
+.left {
+  flex: 1;
+  padding: 60px 30px;
+  position: relative;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  background: #dfeaed;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 400px;
+}
+
+.item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.right {
+  clip-path: url(#waveClip2);
+  height: 400px;
+}
+
+.right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  transform: rotate(180deg);
+}
+
+
+
+@media (max-width: 767px) {
+
+  .right, .right img {
+    display: none;
+  }
+  .heading {
+    margin-inline: auto;
+    font-size: 20px;
+    
+  }
+  .section{
+    height: auto;
+  }
+  .left{
+    width: fit-content;
+    padding: 40px 20px;
+    padding-bottom: 0px;
+  }
+  .item{
+    width: fit-content;
+    font-size: 16px;
+  }
+}
+
+
+
+/* Trending Search At Py-Olliv End */

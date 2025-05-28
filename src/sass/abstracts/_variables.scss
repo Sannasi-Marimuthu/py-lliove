@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
-  --font-primary: "Jost", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 $breakpoints: (
@@ -32,7 +33,17 @@ $text-sizes: 4, 7, 10, 12, 13, 14, 15, 16, 18, 20, 22, 24, 25, 26, 30, 40, 50,
 $colors: (
   white: #ffffff,
   black: #000000,
-  border: #dddddd,
+  
+  border: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(115, 115, 115, 1) 100%),
+  bos-shadow : linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(76, 94, 76, 1) 100%) ,
+  gradient: linear-gradient(90deg,rgba(97, 73, 97, 1) 0%, rgba(38, 66, 38, 1) 100%),
+
+  bg-color:#eef1f7,
+  card-bg: #ffddab,
+  light-green : #effef0,
+  
+  primary:#4b5e4b,
+  text-light :#4b5261,
 
   dark-1: #000000,
   dark-2: #0d2857,

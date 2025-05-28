@@ -14,7 +14,7 @@ const MobileMenu = () => {
     <>
       <div className="pro-header d-flex align-items-center justify-between border-bottom-light">
         <Link to="/">
-          <img src="/img/general/pylliove_logo1.png" alt="brand" width={150} />
+          <img src="/img/general/py-ollive-logo.png" alt="brand" width={130} />
         </Link>
         {/* End logo */}
 
@@ -69,7 +69,7 @@ const MobileMenu = () => {
         </Menu>
       </Sidebar>
 
-      <div className="mobile-footer px-20 py-5 border-top-light"></div>
+      <div className="mobile-footer px-20 border-top-light"></div>
 
       <div className="pro-footer">
         <ContactInfo />
@@ -79,7 +79,7 @@ const MobileMenu = () => {
             <Social />
           </div>
         </div> */}
-        <div className="mt-20">
+        <div >
           <Link
             className=" button -dark-1 px-30 fw-400 text-14 bg-blue-1 h-50 text-white"
             to="/login"

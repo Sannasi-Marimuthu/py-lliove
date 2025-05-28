@@ -2,24 +2,21 @@
 import DefaultFooter from "../../components/footer/default";
 import DateSearch from "../../components/hotel-list/common/DateSearch";
 import GuestSearch from "../../components/hotel-list/common/GuestSearch";
-import LocationSearch from "../../components/hotel-list/common/LocationSearch";
 import Hotels from "../../components/hotels/Hotels";
-// import PopularHotels from "@/components/home/PopularHotels";
 import Navbar from "../../components/navbar/Navbar";
 import Signature from "../../components/signature/Signature";
-// import Navbar from "@/components/navbar/Navbar";
-// import DefaultFooter from "../../components/footer/default/index";
-import "./style.css";
-import "./style1.css";
+import "./style/hero.css";
 import "./signature.css";
 import { Link } from "react-router-dom";
+import LocationHome from "../../components/hotel-list/common/LocationHome";
+import TrendingSearch from "../../components/home/TrendingSearch";
 
 const MainHome = () => {
   return (
     <div style={{ backgroundColor: "#ecf0f7" }}>
       <Navbar />
-      {/* Hero */}
-      <div style={{ marginTop: "5.5em" }}>
+      {/* Hero start */}
+      <div style={{ marginTop: "2em" }} className="container">
         <svg width="0" height="0" aria-hidden="true" focusable="false">
           <defs>
             <clipPath id="waveClip" clipPathUnits="objectBoundingBox">
@@ -56,9 +53,20 @@ const MainHome = () => {
 
             <div className="top-left-text1">
               <div className="inner-text1 text-center1">
-                <span style={{ fontSize: "15px" }}>Find the Top</span>
-                <br />
-                Hotel Nearby
+                <h4
+                  style={{
+                    fontSize: "18px",
+                    textAlign: "center",
+                    color: "#536553",
+                  }}
+                >
+                  Find the Top
+                </h4>
+
+                <h4 style={{ fontSize: "24px", color: "#536553" }}>
+                  {" "}
+                  Hotel Nearby
+                </h4>
               </div>
             </div>
 
@@ -71,7 +79,10 @@ const MainHome = () => {
                       alt="Olliv Stay"
                       width={20}
                     />
-                    <span className="badge rounded-pill text-dark">
+                    <span
+                      className="badge rounded-pill"
+                      style={{ backgroundColor: "#4b5e4b", color: "#fff" }}
+                    >
                       Olliv Stay
                     </span>
                   </div>
@@ -126,106 +137,83 @@ const MainHome = () => {
           </div>
         </div>
       </div>
+      {/* Hero End */}
 
       {/* Search Box */}
-      <div className="container" style={{ marginTop: "5em" }}>
+      <div className="container " style={{ marginTop: "5em" }}>
         <div
-          className="mainSearch px-20 py-10 lg:px-10 lg:pt-5 lg:pb-20 "
+          className="mainSearch main-search px-20 py-30 lg:px-10 lg:pt-5 lg:pb-20 "
           style={{
             borderRadius: "20px",
             marginInline: "auto",
             backgroundColor: "#fff",
-            width: "85%",
-            boxShadow: "2px 2px 5px 2px #aaaaaa",
+            boxShadow: "0 2px 3px 0px #686f68",
             zIndex: "9",
           }}
         >
-          <div className="button-grid items-center justify-content-center">
-            <LocationSearch />
-            {/* End Location */}
+          <div className="">
+            <div className="d-flex items-center justify-content-evenly flex-wrap ">
+              {/* LOcation start */}
+              <LocationHome />
+              {/* Location End */}
 
-            <div className="searchMenu-date px-10 lg:py-20  sm:px-20 js-form-dd js-calendar">
-              <div>
-                <h4 className="text-15 fw-500 ls-2 lh-16">
-                  Check in - Check out
-                </h4>
-                <DateSearch />
+              {/* checkIn date start */}
+              <div className="searchMenu-date px-10 lg:py-20  sm:px-20 js-form-dd js-calendar d-flex flex-row flex-wrap gap-20 ">
+                <div>
+                  <span
+                    className="badge rounded-pill"
+                    style={{ backgroundColor: "#4b5e4b", color: "#fff" }}
+                  >
+                    Check_In
+                  </span>
+                  <DateSearch />
+                </div>
               </div>
+              {/* checkIn date end */}
+              {/* checkOut date start */}
+              <div className="searchMenu-date px-10 lg:py-20  sm:px-20 js-form-dd js-calendar d-flex flex-row flex-wrap gap-20 ">
+                <div>
+                  <span
+                    className="badge rounded-pill"
+                    style={{ backgroundColor: "#4b5e4b", color: "#fff" }}
+                  >
+                    Check_Out
+                  </span>
+                  <DateSearch />
+                </div>
+              </div>
+
+              {/* checkOut date End */}
+
+              {/* Start Guests & rooms */}
+              <GuestSearch />
+              {/* End Guests & rooms */}
             </div>
-            {/* End check-in-out */}
-
-            <GuestSearch />
-            {/* End guest */}
-
-            {/* <div className="button-item h-full">
-            <button className="button -dark-1 py-15 px-40 h-full col-12 rounded-0 bg-blue-1 text-white">
-              <i className="icon-search text-20 mr-10" />
-              Search
-            </button>
-          </div> */}
-            {/* End search button_item */}
-          </div>
-          <div style={{ marginBottom: "-3em" }}>
-            <Link
-              to={"/hotelList"}
-              className="button -md -dark-1 bg-blue-1 text-white"
-              style={{
-                borderRadius: "10px",
-                height: "30px",
-                width: "250px",
-                height: "50px",
-                marginInline: "auto",
-              }}
-            >
-              See Booking Option
-            </Link>
+            {/* start see Booking  option*/}
+            <div style={{ marginTop: "1.5em" }}>
+              <Link
+                to={"/hotelList"}
+                className="button -md -dark-1 bg-blue-1 text-white"
+                style={{
+                  borderRadius: "10px",
+                  height: "30px",
+                  width: "250px",
+                  height: "50px",
+                  marginInline: "auto",
+                  marginBottom: "-4em",
+                }}
+              >
+                See Booking Option
+              </Link>
+            </div>
+            {/* end see booking option */}
           </div>
         </div>
       </div>
 
       {/* Trending Search At Py-Olliv */}
-      <div>
-        <svg width="0" height="0" aria-hidden="true" focusable="false">
-          <defs>
-            <clipPath id="waveClip" clipPathUnits="objectBoundingBox">
-              <path d="M0,1 C0.15,0.5 0.85,0.5 1,0 L1,0 L0,0 Z" />
-            </clipPath>
-          </defs>
-        </svg>
-
-        <h3 className="heading" style={{ color: "#2f5731" }}>
-          Trending Search At Py-Olliv
-        </h3>
-
-        <div className="section">
-          <div className="right">
-            <img
-              src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg"
-              alt="Hotel"
-            />
-          </div>
-          <div className="left">
-            <div className="item">
-              <img src="/img/home_icon/beach.png" />
-              <span>Beach Getaways In Goa</span>
-            </div>
-
-            <div className="item">
-              <img src="/img/home_icon/business.png" />
-              <span>Business Stays In Bengaluru</span>
-            </div>
-
-            <div className="item">
-              <img src="/img/home_icon/nature.png" width={150} />
-              <span>Nature Retreats In Kochi</span>
-            </div>
-
-            <div className="item">
-              <img src="/img/home_icon/hill_station.png" />
-              <span>Hill Station Escape In Shimla</span>
-            </div>
-          </div>
-        </div>
+      <div className="container " style={{ marginTop: "0em" }}>
+        <TrendingSearch />
       </div>
 
       {/* Popular hotels */}
@@ -242,7 +230,6 @@ const MainHome = () => {
         </div>
       </div>
 
-    
       {/* signature end */}
       {/* Unique selling proposition */}
 
