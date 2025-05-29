@@ -4,7 +4,7 @@ const FoodBeverage = () => {
   return (
       <div className="container">
           <div className="row" >
-            <div className="col-12 bg-light-2"  style={{ boxShadow: "1px 0px 0px 2px rgba(0, 0, 0, 0.4)", borderRadius:"5px" }}>
+            <div className="col-12 bg-light-2"  style={{  boxShadow: "1px 2px 2px 2px #686f68", borderRadius:"5px" }}>
               <div className="px-24 py-20 rounded-4 ">
 
                 <div className="col-12">
@@ -15,7 +15,7 @@ const FoodBeverage = () => {
                 <div className="row x-gap-20 y-gap-20 items-center mt-3">
                   <div className="col-auto">
                     <div className="flex-center size-80 rounded-full bg-white">
-                      <img src="https://static.vecteezy.com/system/resources/thumbnails/024/159/541/small_2x/spoon-with-fork-on-plate-icon-in-grey-and-orange-color-vector.jpg" alt="icon" />
+                      <img src="/img/general/food.png" alt="icon" />
                     </div>
                   </div>
                   <div className="col-auto">
@@ -31,7 +31,7 @@ const FoodBeverage = () => {
                   </div>
                 </div>
 
-                <div className="col-auto mt-3"  style={{ boxShadow: "1px 0px 0px 2px rgba(0, 0, 0, 0.4)", borderRadius:"5px" , padding:'20px'}}>
+                <div className="col-auto mt-3"  style={{border:"1px solid gray", borderRadius:"5px" , padding:'20px'}}>
                     <p className="text-16 lh-15 fw-500">
                       Non-veg food is allowed
                     </p>

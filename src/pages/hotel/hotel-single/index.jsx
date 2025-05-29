@@ -3,15 +3,15 @@ import { hotelsData } from "../../../data/hotels";
 // import DefaultHeader from "@/components/header/default-header";
 import Header from "../../../components/header/index";
 import DefaultFooter from "../../../components/footer/default/index";
-import MainFilterSearchBox from "../../../components/hotel-list/MainFilterSearchBox";
 // import StickyHeader2 from "@/components/hotel-single/StickyHeader2";
 import GalleryHotel from "../../../components/hotel-single/GalleryHotel";
 import { useParams } from "react-router-dom";
 
 import MetaComponent from "../../../components/common/MetaComponent";
 import HotelTabs from "../../../components/hotel-single/HotelTabs";
-import SimilarHotels from "../../../components/hotel-single/similarHotels/SimilarHotels";
-
+// import SimilarHotels from "../../../components/hotel-single/similarHotels/SimilarHotels";
+import './style.css'
+import HotelFilterSearchBox from "../../../components/hotel-list/HotelFilterSearch";
 const metadata = {
   title:
     "Hotel Single || Py Ollive -- Hotel Rooms & Conference Hall Booking ",
@@ -35,14 +35,14 @@ const HotelSingleDynamic = () => {
       {/* End DefaultHeader */}
       <div style={{ backgroundColor: "#eef1f7" }}>
         <section
-          className=" pb-40"
-          style={{ marginLeft: "10em", marginTop: "5em" }}
+          className=" pb-40 hotel-filter"
+         
         >
           <div className="container">
             <div className="row">
               <div className="col-10">
                 {/* End text-center */}
-                <MainFilterSearchBox />
+                <HotelFilterSearchBox />
               </div>
               {/* End col-12 */}
             </div>
@@ -50,9 +50,15 @@ const HotelSingleDynamic = () => {
         </section>
         {/* End Search filter top */}
 
-        <GalleryHotel hotel={hotel} />
+        <div className="container">
+        <div className="col-12">
+            <GalleryHotel hotel={hotel} />
+        </div>
+        </div>
+        
 
         {/* End gallery grid wrapper */}
+        
 
         <div className="container">
           <div className="col-12 ">
@@ -60,11 +66,11 @@ const HotelSingleDynamic = () => {
           </div>
         </div>
 
-        <div className="container">
+        {/* <div className="container">
           <div className="col-12">
             <SimilarHotels />
           </div>
-        </div>
+        </div> */}
 
         <div className="container mt-40">
           <div className="border-top-light"></div>

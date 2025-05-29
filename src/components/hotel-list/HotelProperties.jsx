@@ -107,7 +107,8 @@ const HotelProperties = () => {
 
                   <Link
                     to={`/hotel-single/${item.id}`}
-                    className="button -md -dark-1 bg-blue-1 mt-2 text-white" style={{borderRadius:"10px", height:"30px"}}
+                    className="button -md -dark-1 mt-2 text-white" style={{borderRadius:"10px", height:"30px",  background: "linear-gradient(90deg, rgb(97, 171, 97) 25%, rgb(73, 115, 73) 100%, rgb(73, 115, 73) 100%)"
+    }}
                   >
                     See Booking Option
                   </Link>

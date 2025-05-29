@@ -20,7 +20,7 @@ const RatingBox = ({ hotel }) => {
   ];
 
   return (
-    <div className="px-10 py-10 border-light rounded-5">
+    <div className="px-10 py-10  rounded-5 rating-box" >
       <div className="d-flex items-center">
         <div className=" ml-10">
           <div className="text-18 lh-15 fw-500" style={{ color: "#4d924d" }}>
@@ -31,20 +31,21 @@ const RatingBox = ({ hotel }) => {
       </div>
       <Link
         to={`#`}
-        className="button -md -dark-1  text-white"
+        className="button1 -md -dark-1  text-white"
         style={{
           borderRadius: "10px",
-          height: "30px",
-          width: "160px",
+          height: "auto",
+          width: "content-fit",
           background:
             "linear-gradient(90deg,rgba(97, 171, 97, 1) 25%, rgba(73, 115, 73, 1) 100%, rgba(73, 115, 73, 1) 100%)",
+            padding:"5px 10px"
         }}
       >
         Book this Now
       </Link>
       {/* End d-flex */}
 
-      <div className="border-top-light mt-20 mb-20" />
+      <div className="border-top-light mt-10 mb-20" />
 
       <div>
         <div className="d-flex justify-content-between items-center">
@@ -54,17 +55,17 @@ const RatingBox = ({ hotel }) => {
               className="button -md -dark-1  text-white"
               style={{
                 borderRadius: "10px",
-                height: "30px",
-                width: "30px",
+                width: "content-fit",
                 background:
                   "linear-gradient(90deg,rgba(97, 171, 97, 1) 25%, rgba(73, 115, 73, 1) 100%, rgba(73, 115, 73, 1) 100%)",
+                    padding:"10px 25px"
               }}
             >
               4.5
             </Link>
           </div>
           <div className="d-flex flex-column">
-            <h5 className="text-16" style={{ color: "blue" }}>
+            <h5 className="text-16" style={{ color: "#0000e7", textAlign:"start" }}>
               Excellent
             </h5>
             <p className="text-14">(1743 ratings)</p>
@@ -84,7 +85,7 @@ const RatingBox = ({ hotel }) => {
             />
           </div>
           <div className="d-flex flex-column">
-            <h5 className="text-16" style={{ color: "blue" }}>
+            <h5 className="text-16" style={{color: "#0000e7" }}>
               City Centre
             </h5>
             <p className="text-14"> city centre, Chennai</p>

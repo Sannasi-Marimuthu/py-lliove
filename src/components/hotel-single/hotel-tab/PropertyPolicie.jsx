@@ -2,19 +2,19 @@
 const PropertyPolicie = () => {
   return (
     <>
-       <div className="container">
-        <div className="rounded-4 bg-white px-50 py-30 sm:px-20 sm:py-20"  style={{ boxShadow: "1px 0px 0px 2px rgba(0, 0, 0, 0.4)" }}>
+       <div>
+        <div className="rounded-4 bg-white px-10 py-30 sm:px-20 sm:py-20"  style={{ boxShadow: "1px 2px 2px 2px #686f68" }}>
           <div className="row">
             <div className="col-12">
               <h3 className="text-22 fw-500">Property Rules</h3>
-              <div className="text-16 ">Check-in: 12 PM - Check OUT: 12 PM</div>
+              <div className="text-14 ">Check-in: 12 PM - Check OUT: 12 PM</div>
             </div>
           </div>
           {/* End .row */}
 
           <div className="row x-gap-50 y-gap-30 d-flex">
             <div>
-              <div className="d-flex justify-content-around">
+              <div className="d-flex justify-content-around hotel-policie">
                 <div className="mt-30">
                   <div className="row x-gap-50 y-gap-5 ">
                     <div className="col-12">
@@ -66,11 +66,11 @@ const PropertyPolicie = () => {
                 <div className="row x-gap-10 y-gap-10">
                   <div className="col-auto">
                     <p
-                      className="border-light rounded-10 py-5 px-10 text-14 lh-14"
+                      className="rounded-10 py-5 px-10 text-14 lh-14"
                       style={{
                         color: "#000",
-                        fontWeight: "bold",
                         borderRadius:"5px",
+                        border:'1px solid lightgray'
                        
                       }}
                     >
@@ -80,12 +80,11 @@ const PropertyPolicie = () => {
 
                   <div className="col-auto">
                     <p
-                      className="border-light rounded-10 py-5 px-10 text-14 lh-14"
+                      className="rounded-10 py-5 px-10 text-14 lh-14"
                       style={{
                         color: "#000",
-                        fontWeight: "bold",
                         borderRadius:"5px",
-                      
+                        border:'1px solid lightgray'
                       }}
                     >
                       Guest Profile
@@ -94,12 +93,11 @@ const PropertyPolicie = () => {
 
                   <div className="col-auto">
                     <p
-                      className="border-light rounded-10 py-5 px-10 text-14 lh-14"
+                      className="rounded-10 py-5 px-10 text-14 lh-14"
                       style={{
                         color: "#000",
-                        fontWeight: "bold",
                         borderRadius:"5px",
-                      
+                      border:'1px solid lightgray'
                       }}
                     >
                       Guest Profile (Hourly)
@@ -116,7 +114,7 @@ const PropertyPolicie = () => {
                         borderRadius: "30px",
                         color:"blue",
                         fontSize:"14px",
-                        fontWeight:"bold"
+                        marginTop:"5px"
                       }}
                     >
                     

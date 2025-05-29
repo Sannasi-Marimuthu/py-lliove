@@ -44,16 +44,20 @@ const HotelTabs = () => {
   const [tabIndex, setTabIndex] = useState(0);
 
   return (
+    <div>
     <Tabs
-      className="tabs -underline-2 js-tabs"
+      className="tabs -underline-2 js-tabs  "
       selectedIndex={tabIndex}
       onSelect={(index) => setTabIndex(index)}
     >
       
-      <TabList className="tabs__controls row x-gap-80 y-gap-10 lg:x-gap-20">
+       <div className="container hotel-tab">
+        <div className="border-top-light"></div>
+      </div>
+      <TabList className="tabs__controls row x-gap-50 y-gap-10 lg:x-gap-20 ml-5" >
         {tabs.map((tab, index) => (
           
-          <Tab key={index} className="col-auto mt-3">
+          <Tab key={index} className="col-auto mt-3 ">
           
             <button className="tabs__button text-16 lg:text-16 text-light-1 fw-500 pb-5 lg:pb-0 js-tabs-button"   >
               {tab.label}
@@ -61,12 +65,7 @@ const HotelTabs = () => {
           </Tab>
         ))}
       </TabList>
-
-       <div className="container mt-10">
-        <div className="border-top-light"></div>
-      </div>
-
-      <div className="tabs__content pt-30 js-tabs-content">
+      <div className="tabs__content pt-30 js-tabs-content mt-10">
         {tabs.map((tab, index) => (
           <TabPanel
             key={index}
@@ -79,6 +78,7 @@ const HotelTabs = () => {
         ))}
       </div>
     </Tabs>
+    </div>
   );
 };
 

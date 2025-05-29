@@ -32,26 +32,27 @@ const UserRatingData = () => {
 
   return (
     <div>
-      <div className="d-flex items-center mt-20">
+      <div className="d-flex items-center mt-20 rating-margin" >
         <div
-          className="flex-center bg-blue-1 rounded-4 size-40 text-14 fw-600 text-white "
+          className="flex-center bg-blue-1 rounded-4 size-40 text-18 fw-600 text-white "
           style={{
-            width: "60px",
+            width: "fit-content",
             borderRadius: "20px",
-            height: "50px",
+            height: "auto",
             background:
               "linear-gradient(90deg,rgba(97, 171, 97, 1) 25%, #497349 100%, rgba(73, 115, 73, 1) 100%)",
+              padding:"8px 18px"
           }}
         >
           4.5
         </div>
-        <div className="text-18 text-dark-1 fw-500 ml-10">
+        <div className="text-1 text-dark- ml-10">
           <h3 style={{ color: "#497349" }}>Very Good</h3>
           <p className="text-12">5421 Ratings, 3255 Reviews</p>
         </div>
       </div>
 
-      <div className="row y-gap-20 pt-20">
+      <div className="row y-gap-20 pt-20 rating-margin">
         {reviewProgressContent.map((item) => (
           <div className="col-12" key={item.id}>
             <div className="d-flex items-center justify-content-between">
@@ -65,21 +66,14 @@ const UserRatingData = () => {
               </div>
               <div className="text-18 text-light-1">{item.ratings}</div>
             </div>
-            {/* <div className="progressBar mt-10">
-              <div className="progressBar__bg bg-blue-2" />
-              <div
-                className="progressBar__bar bg-dark-1"
-                style={{ width: item.progressPercent }}
-              />
-            </div> */}
           </div>
         ))}
 
         {/* End .col-md-4 */}
       </div>
 
-      <div className="text-18 text-dark-1 ml-10 mt-3">
-        <h3>
+      <div className="text-18 text-dark-1  mt-3 rating-margin" >
+        <h3 >
           {" "}
           Last 10 Custimer Ratings{" "}
           <span className="text-18 text-light-1">(Latest First)</span>
@@ -93,11 +87,11 @@ const UserRatingData = () => {
         <p
           style={{
             border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+            padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
             color: "#61ab61",
-            marginRight: "20px",
+            marginRight: "5px",
           }}
         >
           5
@@ -105,11 +99,11 @@ const UserRatingData = () => {
         <p
           style={{
             border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
             color: "#61ab61",
-            marginRight: "20px",
+            marginRight: "5px",
           }}
         >
           5
@@ -117,11 +111,11 @@ const UserRatingData = () => {
         <p
           style={{
             border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+             padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
             color: "#61ab61",
-            marginRight: "20px",
+            marginRight: "5px",
           }}
         >
           4
@@ -129,11 +123,11 @@ const UserRatingData = () => {
         <p
           style={{
             border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+            padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
             color: "#61ab61",
-            marginRight: "20px",
+            marginRight: "5px",
           }}
         >
           4
@@ -141,11 +135,11 @@ const UserRatingData = () => {
         <p
           style={{
             border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
             color: "#61ab61",
-            marginRight: "20px",
+            marginRight: "5px",
           }}
         >
           5
@@ -153,11 +147,11 @@ const UserRatingData = () => {
         <p
           style={{
             border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+          padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
             color: "#61ab61",
-            marginRight: "20px",
+            marginRight: "5px",
           }}
         >
           4
@@ -165,11 +159,11 @@ const UserRatingData = () => {
         <p
           style={{
             border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+          padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
             color: "#61ab61",
-            marginRight: "20px",
+            marginRight: "5px",
           }}
         >
           5
@@ -177,11 +171,11 @@ const UserRatingData = () => {
         <p
           style={{
             border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
             color: "#61ab61",
-            marginRight: "20px",
+            marginRight: "5px",
           }}
         >
           4
@@ -189,8 +183,8 @@ const UserRatingData = () => {
         <p
           style={{
             border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
             color: "#61ab61",
           }}
@@ -199,21 +193,21 @@ const UserRatingData = () => {
         </p>
       </div>
 
-      <div className="text-18 text-dark-1 ml-10 mt-3">
+      <div className="text-18 text-dark-1  mt-3 rating-margin" >
         <h3> Filter By:</h3>
       </div>
 
       <div
-        className="d-flex justify-content-center items-center mt-3 flex-wrap "
-        style={{ gap: "16px" }}
+        className="d-flex justify-content-center items-center mt-3 flex-wrap rating-margin"
+        style={{ gap: "16px",}}
       >
         <p
           style={{
             border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
-            marginRight: "20px",
+            marginRight: "10px",
             color: "#002200",
           }}
         >
@@ -221,11 +215,11 @@ const UserRatingData = () => {
         </p>
         <p
           style={{
-            border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+             border: "1px solid gray",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
-            marginRight: "20px",
+            marginRight: "10px",
             color: "#002200",
           }}
         >
@@ -233,11 +227,11 @@ const UserRatingData = () => {
         </p>
         <p
           style={{
-            border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+             border: "1px solid gray",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
-            marginRight: "20px",
+            marginRight: "10px",
             color: "#002200",
           }}
         >
@@ -245,11 +239,11 @@ const UserRatingData = () => {
         </p>
         <p
           style={{
-            border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+             border: "1px solid gray",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
-            marginRight: "20px",
+            marginRight: "10px",
             color: "#002200",
           }}
         >
@@ -257,11 +251,11 @@ const UserRatingData = () => {
         </p>
         <p
           style={{
-            border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+             border: "1px solid gray",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
-            marginRight: "20px",
+            marginRight: "10px",
             color: "#002200",
           }}
         >
@@ -269,11 +263,11 @@ const UserRatingData = () => {
         </p>
         <p
           style={{
-            border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+             border: "1px solid gray",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
-            marginRight: "20px",
+            marginRight: "10px",
             color: "#002200",
           }}
         >
@@ -281,11 +275,11 @@ const UserRatingData = () => {
         </p>
         <p
           style={{
-            border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+             border: "1px solid gray",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
-            marginRight: "20px",
+            marginRight: "10px",
             color: "#002200",
           }}
         >
@@ -293,11 +287,11 @@ const UserRatingData = () => {
         </p>
         <p
           style={{
-            border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+             border: "1px solid gray",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
-            marginRight: "20px",
+            marginRight: "10px",
             color: "#002200",
           }}
         >
@@ -306,8 +300,8 @@ const UserRatingData = () => {
         <p
           style={{
             border: "1px solid gray",
-            padding: "10px",
-            borderRadius: "10px",
+           padding: "5px 10px",
+            borderRadius: "5px",
             fontWeight: "bold",
             color: "#002200",
           }}
@@ -317,7 +311,7 @@ const UserRatingData = () => {
       </div>
 
       <div>
-        <div className="d-flex items-center mt-20">
+        <div className="d-flex items-center mt-20 rating-margin" >
           <div
             className="flex-center bg-blue-1 rounded-4 size-40 text-14 fw-600 text-white "
             style={{
@@ -330,7 +324,7 @@ const UserRatingData = () => {
           >
             4.5
           </div>
-          <div className="text-18 text-dark-1  ml-10">
+          <div className="text-18 text-dark-1  rating-margin" >
             <h5 style={{ color: "#497349" }}>Good</h5>
             <p className="text-16" style={{ color: "#002200" }}>
               ChandranS. Family With 2 Kids
@@ -338,11 +332,11 @@ const UserRatingData = () => {
           </div>
         </div>
         <div>
-          <p className="text-18 text-light-1">
+          <p className="text-18 text-light-1 rating-margin" >
             Location is very near by to thiruvalur bus sto walk for 10 mins your
             reach Hotel, if you take auto or cab just 3 mints from thiruvalur{" "}
           </p>
-          <p className="text-22 text-dark-1" style={{ fontWeight: "bold" }}>
+          <p className="text-22 text-dark-1 rating-margin" style={{ fontWeight: "bold"}}>
             Travel Month:{" "}
             <span
               className="text-18 text-dark-1"
@@ -351,7 +345,7 @@ const UserRatingData = () => {
               May 2025
             </span>{" "}
           </p>
-          <p className="text-22 text-dark-1" style={{ fontWeight: "bold" }}>
+          <p className="text-22 text-dark-1 rating-margin" style={{ fontWeight: "bold" }}>
             Room:{" "}
             <span
               className="text-18 text-dark-1"
@@ -360,14 +354,15 @@ const UserRatingData = () => {
               Hablis
             </span>{" "}
           </p>
-          <p className="text-18" style={{ color: "#497349" }}>
+          <p className="text-18 rating-margin" style={{ color: "#497349" }}>
             Helpful
           </p>
         </div>
       </div>
 
+      
       <div>
-        <div className="d-flex items-center mt-20">
+        <div className="d-flex items-center mt-20 rating-margin">
           <div
             className="flex-center bg-blue-1 rounded-4 size-40 text-14 fw-600 text-white "
             style={{
@@ -378,21 +373,21 @@ const UserRatingData = () => {
                 "linear-gradient(90deg,rgba(97, 171, 97, 1) 25%, #497349 100%, rgba(73, 115, 73, 1) 100%)",
             }}
           >
-            3.4
+            4.5
           </div>
-          <div className="text-18 text-dark-1  ml-10">
+          <div className="text-18 text-dark-1  rating-margin" >
             <h5 style={{ color: "#497349" }}>Good</h5>
             <p className="text-16" style={{ color: "#002200" }}>
-              Prem k. Family With 2 Kids
+              ChandranS. Family With 2 Kids
             </p>
           </div>
         </div>
         <div>
-          <p className="text-18 text-light-1">
+          <p className="text-18 text-light-1 rating-margin" >
             Location is very near by to thiruvalur bus sto walk for 10 mins your
             reach Hotel, if you take auto or cab just 3 mints from thiruvalur{" "}
           </p>
-          <p className="text-22 text-dark-1" style={{ fontWeight: "bold" }}>
+          <p className="text-22 text-dark-1 rating-margin" style={{ fontWeight: "bold" }}>
             Travel Month:{" "}
             <span
               className="text-18 text-dark-1"
@@ -401,7 +396,7 @@ const UserRatingData = () => {
               May 2025
             </span>{" "}
           </p>
-          <p className="text-22 text-dark-1" style={{ fontWeight: "bold" }}>
+          <p className="text-22 text-dark-1 rating-margin" style={{ fontWeight: "bold" }}>
             Room:{" "}
             <span
               className="text-18 text-dark-1"
@@ -410,14 +405,15 @@ const UserRatingData = () => {
               Hablis
             </span>{" "}
           </p>
-          <p className="text-18" style={{ color: "#497349" }}>
+          <p className="text-18 rating-margin" style={{ color: "#497349" }}>
             Helpful
           </p>
         </div>
       </div>
 
+      
       <div>
-        <div className="d-flex items-center mt-20">
+        <div className="d-flex items-center mt-20 rating-margin" >
           <div
             className="flex-center bg-blue-1 rounded-4 size-40 text-14 fw-600 text-white "
             style={{
@@ -428,21 +424,21 @@ const UserRatingData = () => {
                 "linear-gradient(90deg,rgba(97, 171, 97, 1) 25%, #497349 100%, rgba(73, 115, 73, 1) 100%)",
             }}
           >
-            4.6
+            4.5
           </div>
-          <div className="text-18 text-dark-1  ml-10">
-            <h5 style={{ color: "#497349" }}>Average Stay</h5>
+          <div className="text-18 text-dark-1  rating-margin" >
+            <h5 style={{ color: "#497349" }}>Good</h5>
             <p className="text-16" style={{ color: "#002200" }}>
-              Prem k. Family With 2 Kids
+              ChandranS. Family With 2 Kids
             </p>
           </div>
         </div>
         <div>
-          <p className="text-18 text-light-1">
+          <p className="text-18 text-light-1 rating-margin" >
             Location is very near by to thiruvalur bus sto walk for 10 mins your
             reach Hotel, if you take auto or cab just 3 mints from thiruvalur{" "}
           </p>
-          <p className="text-22 text-dark-1" style={{ fontWeight: "bold" }}>
+          <p className="text-22 text-dark-1 rating-margin" style={{ fontWeight: "bold" }}>
             Travel Month:{" "}
             <span
               className="text-18 text-dark-1"
@@ -451,7 +447,7 @@ const UserRatingData = () => {
               May 2025
             </span>{" "}
           </p>
-          <p className="text-22 text-dark-1" style={{ fontWeight: "bold" }}>
+          <p className="text-22 text-dark-1 rating-margin" style={{ fontWeight: "bold" }}>
             Room:{" "}
             <span
               className="text-18 text-dark-1"
@@ -460,11 +456,13 @@ const UserRatingData = () => {
               Hablis
             </span>{" "}
           </p>
-          <p className="text-18" style={{ color: "#497349" }}>
+          <p className="text-18 rating-margin" style={{ color: "#497349"}}>
             Helpful
           </p>
         </div>
       </div>
+
+      
 
       <Pagination />
     </div>

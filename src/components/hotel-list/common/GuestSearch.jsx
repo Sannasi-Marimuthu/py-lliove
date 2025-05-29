@@ -75,7 +75,7 @@ const GuestSearch = () => {
         aria-expanded="false"
         data-bs-offset="0,22"
       >
-        <span className="badge rounded-pill" style={{ color:"#000", fontWeight:"450" }}>
+        <span className="badge rounded-pill " style={{ color:"#000", fontWeight:"450" }}>
                 Guests & Romms*
                     </span>
         <div

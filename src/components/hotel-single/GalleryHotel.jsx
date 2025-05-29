@@ -21,11 +21,11 @@ export default function GalleryHotel({ hotel }) {
         onClose={() => setOpen(false)}
       />
       <section className="pt-40" >
-        <div className="container"   style={{ backgroundColor:"#fff", padding:"20px", borderRadius:"10px"}}>
+        <div className="container single-hotel"  >
           <div className="hotelSingleGrid">
             <div>
               <Gallery>
-                <div className="galleryGrid -type-2">
+                <div className="galleryGrid -type-2" style={{width:"100%"}}>
                   <div className="galleryGrid__item relative d-flex justify-end">
                     <Item
                       original={hotel?.img}
@@ -105,11 +105,15 @@ export default function GalleryHotel({ hotel }) {
                       >
                         {({ ref, open }) => (
                           <div
-                            className="button -blue-1 px-24 py-15 bg-white text-dark-1 js-gallery"
+                            className="button -blue-1 px-24 py-15  text-dark-1 js-gallery"
                             ref={ref}
                             onClick={open}
                             role="button"
-                          >
+                            style={{
+                              background:"rgb(64, 78, 62, 0.5)",
+                              color:"#fff"
+                            }}
+                          ><div className="icon-arrow-right mr-15"></div>
                             See All Photos
                           </div>
                         )}
@@ -121,7 +125,7 @@ export default function GalleryHotel({ hotel }) {
               </Gallery>
               {/* End gallery grid */}
 
-              <div className="row justify-between items-end pt-40">
+              <div className="row justify-between items-end pt-10">
                 <div className="col-auto">
                   <div className="row x-gap-20  items-center">
                     <div className="col-auto">
@@ -151,7 +155,7 @@ and a host of amenities.</p>
                 <div className="col-auto">
                   <div className="text-22 text-dark-1 fw-500">
                    Amenities
-                  <p className="text-14">Amenities rated 4.2 by guests</p>
+                  <p className="text-14" style={{marginTop:"-.5em"}}>Amenities rated 4.2 by guests</p>
                   </div>
                 </div>
 
@@ -181,7 +185,7 @@ and a host of amenities.</p>
             </div>
             {/* End right content */}
 
-                   
+               
           </div>
 
 

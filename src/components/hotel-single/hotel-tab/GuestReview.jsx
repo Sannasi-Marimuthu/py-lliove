@@ -15,7 +15,7 @@ const GuestReview = () => {
 
       <div
         className={`bg-white rounded-4 px-50 py-30 sm:px-20 sm:py-20 `}
-        style={{ boxShadow: "1px 0px 0px 2px rgba(0, 0, 0, 0.4)" , marginTop:"1em", marginInline:"10px"}}
+        style={{ boxShadow:"2px 2px 3px 0px #686f68", marginTop:"1em", marginInline:"10px"}}
       >
         <h4>Photos by Guests</h4>
         <Gallery>

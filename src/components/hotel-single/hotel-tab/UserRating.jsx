@@ -32,8 +32,8 @@ const UserRating = () => {
     <div
       className={`bg-white rounded-4 px-50 py-30 sm:px-20 sm:py-20 `}
       style={{
-        boxShadow: "1px 0px 0px 2px rgba(0, 0, 0, 0.4)",
-        marginInline: "50px",
+        boxShadow:"2px 2px 3px 0px #686f68",
+        
       }}
     >
       <div className="col-12">
@@ -44,7 +44,7 @@ const UserRating = () => {
         selectedIndex={tabIndex}
         onSelect={(index) => setTabIndex(index)}
       >
-        <TabList className="tabs__controls row x-gap-80 y-gap-10 lg:x-gap-20">
+        <TabList className="tabs__controls row x-gap-80 y-gap-10 lg:x-gap-20" style={{marginInline:"5em"}}>
           {tabs.map((tab, index) => (
             <Tab key={index} className="col-auto mt-3">
               <button className="tabs__button text-16 lg:text-16 text-light-1 fw-500 pb-5 lg:pb-0 js-tabs-button">
@@ -53,8 +53,8 @@ const UserRating = () => {
             </Tab>
           ))}
         </TabList>
-        <div className="container ">
-          <div className="border-top-light"></div>
+        <div className="container " >
+          <div className="border-top-light"style={{marginInline:"5em"}} ></div>
         </div>
 
         <div className="tabs__content pt-30 js-tabs-content">

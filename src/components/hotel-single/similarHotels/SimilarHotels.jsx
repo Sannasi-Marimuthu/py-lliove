@@ -7,7 +7,7 @@ const SimilarHotels = () => {
       className="bg-white"
       style={{
         border: ".5px solid rgba(143, 140, 140, 0.4)",
-        marginTop: "1em",
+        marginTop: "2em",
         borderRadius: "10px",
       }}
     >
@@ -80,28 +80,32 @@ const SimilarHotels = () => {
                     Room With free Cancelation
                   </div>
                   <div className="similar-booking-info">
-                    <p>Book @ 0 available </p>
-                    <p>Risk Free Booking!</p>
+                    <p style={{ color: "#568b56", fontWeight: "bold" }}>
+                      Book @ 0 available{" "}
+                    </p>
+                    <p style={{ fontWeight: "bold", color: "#000" }}>
+                      Risk Free Booking!
+                    </p>
                   </div>
                   <div className="similar-rate-info">
-                    Best rate
-                    <br />
-                    Free Cancelation before 16 May 10:59 PM
+                    <p style={{ fontWeight: "bold", color: "#000" }}>Best rate</p>
+
+                    <p  style={{ color: "#568b56", fontWeight: "bold" }}>Free Cancelation before 16 May 10:59 PM</p>
                   </div>
                 </div>
                 <div>
-                  <div className="similar-price-section">
+                  <div className="similar-price-section text-center">
                     <div className="similar-price">
-                      classNameic <br />{" "}
-                      <span style={{ color: "#000" }}>₹2,499</span>
+                       <p style={{fontSize:"24px", color:"#568b56"}}> classic</p>
+                      <p style={{ color: "#000", fontSize:"20px", marginTop:"-.5em" }}>₹2,499</p>
                     </div>
                     <button className="similar-select-button">
                       SELECT ROOM
                     </button>
 
                     <div className="similar-offer-note">
-                      Axis Bank Credit Card Offer - Get INR 4098 OFF!
-                      <br />
+                    <p style={{fontSize:"10px", color:"#000"}}> Axis Bank Credit Card Offer - Get INR 4098 OFF!
+                     </p> 
                       <a href="#">SELECT TO AVAIL</a>
                     </div>
                   </div>
@@ -127,8 +131,7 @@ const SimilarHotels = () => {
             </div>
           </div>
         </div>
-
-        <div style={{ margin: "20px", marginTop: "0px" }}>
+         <div style={{ margin: "20px", marginTop: "0px" }}>
           <div className="similar-container">
             {/* Left Section  */}
             <div className="similar-left">
@@ -174,28 +177,32 @@ const SimilarHotels = () => {
                     Room With free Cancelation
                   </div>
                   <div className="similar-booking-info">
-                    Book @ 0 available
-                    <strong>Risk Free Booking!</strong>
+                    <p style={{ color: "#568b56", fontWeight: "bold" }}>
+                      Book @ 0 available{" "}
+                    </p>
+                    <p style={{ fontWeight: "bold", color: "#000" }}>
+                      Risk Free Booking!
+                    </p>
                   </div>
                   <div className="similar-rate-info">
-                    Best rate
-                    <br />
-                    Free Cancelation before 16 May 10:59 PM
+                    <p style={{ fontWeight: "bold", color: "#000" }}>Best rate</p>
+
+                    <p  style={{ color: "#568b56", fontWeight: "bold" }}>Free Cancelation before 16 May 10:59 PM</p>
                   </div>
                 </div>
                 <div>
-                  <div className="similar-price-section">
+                  <div className="similar-price-section text-center">
                     <div className="similar-price">
-                      classNameic <br />{" "}
-                      <span style={{ color: "#000" }}>₹2,499</span>
+                       <p style={{fontSize:"24px", color:"#568b56"}}> classic</p>
+                      <p style={{ color: "#000", fontSize:"20px", marginTop:"-.5em" }}>₹2,499</p>
                     </div>
                     <button className="similar-select-button">
                       SELECT ROOM
                     </button>
 
                     <div className="similar-offer-note">
-                      Axis Bank Credit Card Offer - Get INR 4098 OFF!
-                      <br />
+                    <p style={{fontSize:"10px", color:"#000"}}> Axis Bank Credit Card Offer - Get INR 4098 OFF!
+                     </p> 
                       <a href="#">SELECT TO AVAIL</a>
                     </div>
                   </div>
@@ -221,8 +228,7 @@ const SimilarHotels = () => {
             </div>
           </div>
         </div>
-
-        <div style={{ margin: "20px", marginTop: "0px" }}>
+         <div style={{ margin: "20px", marginTop: "0px" }}>
           <div className="similar-container">
             {/* Left Section  */}
             <div className="similar-left">
@@ -268,28 +274,32 @@ const SimilarHotels = () => {
                     Room With free Cancelation
                   </div>
                   <div className="similar-booking-info">
-                    Book @ 0 available
-                    <strong>Risk Free Booking!</strong>
+                    <p style={{ color: "#568b56", fontWeight: "bold" }}>
+                      Book @ 0 available{" "}
+                    </p>
+                    <p style={{ fontWeight: "bold", color: "#000" }}>
+                      Risk Free Booking!
+                    </p>
                   </div>
                   <div className="similar-rate-info">
-                    Best rate
-                    <br />
-                    Free Cancelation before 16 May 10:59 PM
+                    <p style={{ fontWeight: "bold", color: "#000" }}>Best rate</p>
+
+                    <p  style={{ color: "#568b56", fontWeight: "bold" }}>Free Cancelation before 16 May 10:59 PM</p>
                   </div>
                 </div>
                 <div>
-                  <div className="similar-price-section">
+                  <div className="similar-price-section text-center">
                     <div className="similar-price">
-                      classNameic <br />{" "}
-                      <span style={{ color: "#000" }}>₹2,499</span>
+                       <p style={{fontSize:"24px", color:"#568b56"}}> classic</p>
+                      <p style={{ color: "#000", fontSize:"20px", marginTop:"-.5em" }}>₹2,499</p>
                     </div>
                     <button className="similar-select-button">
                       SELECT ROOM
                     </button>
 
                     <div className="similar-offer-note">
-                      Axis Bank Credit Card Offer - Get INR 4098 OFF!
-                      <br />
+                    <p style={{fontSize:"10px", color:"#000"}}> Axis Bank Credit Card Offer - Get INR 4098 OFF!
+                     </p> 
                       <a href="#">SELECT TO AVAIL</a>
                     </div>
                   </div>
@@ -315,8 +325,7 @@ const SimilarHotels = () => {
             </div>
           </div>
         </div>
-
-        <div style={{ margin: "20px", marginTop: "0px" }}>
+         <div style={{ margin: "20px", marginTop: "0px" }}>
           <div className="similar-container">
             {/* Left Section  */}
             <div className="similar-left">
@@ -362,28 +371,32 @@ const SimilarHotels = () => {
                     Room With free Cancelation
                   </div>
                   <div className="similar-booking-info">
-                    Book @ 0 available
-                    <strong>Risk Free Booking!</strong>
+                    <p style={{ color: "#568b56", fontWeight: "bold" }}>
+                      Book @ 0 available{" "}
+                    </p>
+                    <p style={{ fontWeight: "bold", color: "#000" }}>
+                      Risk Free Booking!
+                    </p>
                   </div>
                   <div className="similar-rate-info">
-                    Best rate
-                    <br />
-                    Free Cancelation before 16 May 10:59 PM
+                    <p style={{ fontWeight: "bold", color: "#000" }}>Best rate</p>
+
+                    <p  style={{ color: "#568b56", fontWeight: "bold" }}>Free Cancelation before 16 May 10:59 PM</p>
                   </div>
                 </div>
                 <div>
-                  <div className="similar-price-section">
+                  <div className="similar-price-section text-center">
                     <div className="similar-price">
-                      classNameic <br />{" "}
-                      <span style={{ color: "#000" }}>₹2,499</span>
+                       <p style={{fontSize:"24px", color:"#568b56"}}> classic</p>
+                      <p style={{ color: "#000", fontSize:"20px", marginTop:"-.5em" }}>₹2,499</p>
                     </div>
                     <button className="similar-select-button">
                       SELECT ROOM
                     </button>
 
                     <div className="similar-offer-note">
-                      Axis Bank Credit Card Offer - Get INR 4098 OFF!
-                      <br />
+                    <p style={{fontSize:"10px", color:"#000"}}> Axis Bank Credit Card Offer - Get INR 4098 OFF!
+                     </p> 
                       <a href="#">SELECT TO AVAIL</a>
                     </div>
                   </div>
@@ -409,8 +422,10 @@ const SimilarHotels = () => {
             </div>
           </div>
         </div>
+        
+
+        
       </div>
-
     </div>
   );
 };

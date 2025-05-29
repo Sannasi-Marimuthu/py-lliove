@@ -5,13 +5,13 @@ import { hotelsData } from "../../../data/hotels";
 
 const SimilarProperties = () => {
   return (
-    <div className="container">
+    <div >
       <div
-        className={`bg-white rounded-4 px-50 py-30 sm:px-20 sm:py-20 `}
+        className={`bg-white rounded-4 px-50 sm:px-20 sm:py-20 `}
         style={{
-          boxShadow: "1px 0px 0px 2px rgba(0, 0, 0, 0.4)",
+          boxShadow: "2px 2px 3px 0px #686f68",
           marginTop: "1em",
-          marginInline: "10px",
+          marginInline: "5px",
         }}
       >
         <div className="row y-gap-10 justify-between items-end">
@@ -29,7 +29,7 @@ const SimilarProperties = () => {
         </div>
         {/* End .row */}
 
-        <div className="relative  pt-40 sm:pt-20">
+        <div className="relative sm:pt-20">
           <div className="row y-gap-30">
             <Swiper
               spaceBetween={30}
@@ -60,7 +60,7 @@ const SimilarProperties = () => {
                   <div
                     style={{
                       boxShadow: ".5px 0px 0px 2px rgba(0, 0, 0, 0.4)",
-                      padding: "15px",
+                      padding: "10px",
                       borderRadius: "20px",
                     }}
                   >
@@ -97,7 +97,7 @@ const SimilarProperties = () => {
                       {/* End .cardImage */}
                     </div>
                     <div className="hotelsCard__content mt-10">
-                      <h4 className="hotelsCard__title text-dark-1 text-18 lh-16 fw-500">
+                      <h4 className="hotelsCard__title text-dark-1 text-18  fw-500">
                         <span>{item?.title}</span>
                       </h4>
                       <p className="text-light-1 lh-14 text-12 mt-5">
@@ -119,7 +119,7 @@ const SimilarProperties = () => {
                       </div>
                       <div className="d-flex justify-content-between">
                         <div>
-                          <div className="mt-5">
+                          <div >
                             <div className="text-14">
                               Free Cancellation <br />
                               <span className="text-14">Free Wifi</span>
@@ -128,10 +128,10 @@ const SimilarProperties = () => {
                         </div>
 
                         <div>
-                          <div className="mt-5">
+                          <div >
                             <div className="text-18" style={{fontWeight:'bold', color:"#61ab61"}}>
-                              ₹2,499 <br />
-                              <span className="text-14" style={{color:"#000", fontWeight:"normal", marginBottom:"-20px"}}>Free Wifi</span>
+                              ₹2,499 
+                              <p className="text-14" style={{color:"#000", fontWeight:"normal", marginTop:"-5px"}}>Free Wifi</p>
                             </div>
                           </div>
                         </div>
