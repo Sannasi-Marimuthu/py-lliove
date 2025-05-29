@@ -52,7 +52,7 @@ const LocationHome = () => {
           <div
             className="text-15  ls-2 lh-16"
             style={{
-              backgroundColor: "#d9e1ee",
+              backgroundColor: "#eff8f4",
               padding: "5px",
               borderRadius: "10px",
               width: "auto",
