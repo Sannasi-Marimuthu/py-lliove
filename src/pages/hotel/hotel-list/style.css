@@ -86,3 +86,31 @@
         margin-top: -2.5em;
     }
 }
+
+.list-location{
+    background-color: #eff8f4;
+    padding: 5px;
+    border-radius: 10px;
+    width: auto;
+    color: #4b5e4b;
+}
+.list-date{
+    background-color: #eff8f4;
+    color: #4b5e4b;
+    padding: 8px;
+    border-radius: 10px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-guest{
+     background-color: #eff8f4;
+    color: #4b5e4b;
+    padding: 8px;
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

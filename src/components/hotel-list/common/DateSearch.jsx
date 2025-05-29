@@ -8,16 +8,7 @@ const DateSearch = () => {
   ]);
 
   return (
-    <div className="text-15 text-light-1 ls-2 lh-16 custom_dual_datepicker"   style={{
-              backgroundColor: "#d9e1ee",
-              padding: "8px",
-              borderRadius: "10px",
-              width: "auto",
-              color:"#4b5e4b",
-              display:"flex",
-              justifyContent:"space-between",
-            
-            }}>
+    <div className="text-15 text-light-1 ls-2 lh-16 custom_dual_datepicker list-date"  >
 
        <i
                 className="icon-calendar text-16 mr-5"

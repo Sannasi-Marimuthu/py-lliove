@@ -49,14 +49,7 @@ const SearchBar = () => {
                 Location
                     </span>
           <div
-            className="text-15 text-light-1 ls-2 lh-16"
-            style={{
-                backgroundColor: "#d9e1ee",
-              padding: "5px",
-              borderRadius: "10px",
-              width: "auto",
-              color:"#4b5e4b"
-            }}
+            className="text-15 text-light-1 ls-2 lh-16 list-location"
           >
             <div className="d-flex items-center">
               <i

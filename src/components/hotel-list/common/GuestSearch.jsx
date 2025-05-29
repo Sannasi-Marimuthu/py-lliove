@@ -79,17 +79,8 @@ const GuestSearch = () => {
                 Guests & Romms*
                     </span>
         <div
-          className="text-15 text-light-1 ls-2 lh-16"
-          style={{
-           backgroundColor: "#d9e1ee",
-              padding: "8px",
-              borderRadius: "10px",
-              width: "content-fit",
-              color:"#4b5e4b",
-              display:"flex",
-              justifyContent:"space-around",
-              flexWrap:'wrap'
-          }}
+          className="text-15 text-light-1 ls-2 lh-16 list-guest"
+        
         >
           <span className="js-count-adult">
             <img
