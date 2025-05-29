@@ -251,6 +251,7 @@ const MainHome = () => {
           borderRadius: 10,
           marginTop: "50px",
           width: "100%",
+          objectFit:"cover"
           
           }
         }/>
