@@ -292,12 +292,11 @@
 /* signature start */
 
 .title-sign{
-    font-family: "Italianno", cursive;
     font-size: 5em;
     text-align: center;
-    font-weight: normal;
     margin-top: 20px;
     color: rgb(31, 29, 29);
+      font-family: 'ClainaVanie', cursive;
 }
 
 .sign-swiper{
@@ -310,7 +309,7 @@
     }
     .signature-card {
         width: 300px;
-        height: 400px;
+        height: 430px;
         border-radius: 30px;
         overflow: hidden;
         position: relative;

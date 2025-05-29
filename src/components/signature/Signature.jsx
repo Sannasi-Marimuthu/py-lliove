@@ -10,7 +10,9 @@ const Signature = () => {
     <>
       <div className="swiper-container">
 
-        <h1 className="title-sign">Signature</h1>
+        <h1 className="title-sign"
+        
+        >Signature</h1>
         <Swiper
           effect={'coverflow'}
         grabCursor={true}

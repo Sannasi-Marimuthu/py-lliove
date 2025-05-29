@@ -6,6 +6,7 @@ import Hotels from "../../components/hotels/Hotels";
 import Navbar from "../../components/navbar/Navbar";
 import Signature from "../../components/signature/Signature";
 import "./style/hero.css";
+import '../../assets/fonts/font.css';
 import { Link } from "react-router-dom";
 import LocationHome from "../../components/hotel-list/common/LocationHome";
 import TrendingSearch from "../../components/home/TrendingSearch";
