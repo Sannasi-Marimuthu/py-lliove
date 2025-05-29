@@ -48,7 +48,7 @@ const Pagination = () => {
               <div className="size-40 flex-center rounded-full">...</div>
             </div>
             <div className="col-auto">
-              <div className="size-40 flex-center rounded-full">20</div>
+              <div className="size-40 flex-center rounded-full">25</div>
             </div>
           </div>
 

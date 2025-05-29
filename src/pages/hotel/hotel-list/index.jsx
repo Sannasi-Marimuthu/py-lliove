@@ -7,7 +7,7 @@ import HotelProperties from "../../../components/hotel-list/HotelProperties";
 import Pagination from "../../../components/hotel-list/common/Pagination";
 import Sidebar from "../../../components/hotel-list/Sidebar";
 import MetaComponent from "../../../components/common/MetaComponent";
-import './style.css'
+import "./style.css";
 
 const metadata = {
   title: "Hotel List || Py Ollive -- Hotel Rooms & Conference Hall Booking ",
@@ -80,23 +80,29 @@ const HotelList = () => {
               </div>
               {/* End col */}
               {/*  */}
-              <div
-                className="col-xl-9 "
-                style={{
-                  backgroundColor: "#fff",
-                  paddingInline: "40px",
-                  borderRadius: "10px",
-                }}
-              >
-                <div>
-                  <TopHeaderFilter />
-                  <div className="mt-30"></div>
-                  {/* End mt--30 */}
-                  <div className="row y-gap-30">
-                    <HotelProperties />
+              <div className="col-xl-9 ">
+                <div className="col-auto float-end sort-desk">
+                  <button
+                    className="button -blue-1  rounded-100 bg-blue-1-05 text-15 text-blue-1 mb-5 "
+                    style={{ boxShadow: "0 2px 3px 0px #686f68", marginRight:"1.5em", paddingBlock:"8px", paddingInline:"15px"}}
+                  >
+                    sort by
+                    <i className="icon-up-down text-14 ml-10" />
+                  </button>
+                </div>
+                <div className="right-header"
+                 
+                >
+                  <div>
+                    <TopHeaderFilter />
+                    <div className="mt-30"></div>
+                    {/* End mt--30 */}
+                    <div className="row y-gap-30">
+                      <HotelProperties />
+                    </div>
+                    {/* End .row */}
+                    <Pagination />
                   </div>
-                  {/* End .row */}
-                  <Pagination />
                 </div>
               </div>
               {/* End .col for right content */}

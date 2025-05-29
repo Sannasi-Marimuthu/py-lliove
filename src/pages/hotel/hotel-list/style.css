@@ -47,3 +47,42 @@
 }
 
 /* sidebar end */
+
+/*  */
+
+.sort-mobile {
+    display: none;
+}
+.right-header{
+    background-color: #fff;
+    padding-inline: 40px;
+    border-radius: 20px;
+    margin-top: 3.5em;
+      box-shadow: "0px 2px 3px 0px #686f68",
+}
+.list-hotel-price {
+    margin-top: 70px;
+}
+/* .see-booking{
+    height: 30px;
+    border-radius: 10px;
+    background-color: linear-gradient(90deg,rgba(97, 73, 97, 1) 0%, rgba(38, 66, 38, 1) 100%) !important;
+} */
+@media (max-width:767px){
+    .sort-desk{
+        display: none;
+    }
+    .sort-mobile{
+        display: block;
+    }
+    .right-header{
+        margin-top: 0em;
+    }
+    .list-hotel-price{
+        margin-top: 0px;
+        padding-bottom: 20px;
+    }
+    .right-title-hotel{
+        margin-top: -2.5em;
+    }
+}
