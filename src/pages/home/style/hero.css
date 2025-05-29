@@ -365,6 +365,12 @@
 .title-sign{
     font-size: 3em;
 }
+.signature-card {
+  width: 100%;
+}
+.wave-text{
+  margin-left: 9rem;
+}
 }
 /* signature end */
 
