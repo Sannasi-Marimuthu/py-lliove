@@ -546,8 +546,10 @@
     font-size: 22px;
   }
   .unique-item {
-    width: 20em;
-    padding-top: 0px;
+        width: 300px;
+        padding-top: 0px;
+        margin-inline: 15px;
+    
   }
   .unique-right {
     padding-top: 0px;

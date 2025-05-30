@@ -2,7 +2,7 @@ const TopHeaderFilter = () => {
   return (
     <>
    
-      <div className="row y-gap-10 items-center justify-between">
+      <div className="row y-gap-10 items-center justify-between right-title-hotel">
         <div className="col-auto">
           <div className="text-14 pt-2">
             <span className="fw-500">25 filters result for Copenhagen,</span>  17 19 Dec,2guests,1 room
