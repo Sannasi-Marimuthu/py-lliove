@@ -63,6 +63,10 @@
 .list-hotel-price {
     margin-top: 70px;
 }
+.hotel-list-padding{
+    padding-inline: 20px;
+    padding-bottom: 15px;
+}
 /* .see-booking{
     height: 30px;
     border-radius: 10px;
@@ -77,10 +81,20 @@
     }
     .right-header{
         margin-top: 0em;
+        padding-inline: 2px;
     }
     .list-hotel-price{
         margin-top: 0px;
         padding-bottom: 20px;
+    }
+    .hotel-list-padding{
+        padding-inline: 5px;
+    }
+    .right-title-hotel, .right-title-hotel{
+        margin-left: 10px;
+    }
+    .right-title-hotel-btn{
+        margin-right: 20px;
     }
 }
 

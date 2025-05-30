@@ -14,7 +14,7 @@ const HotelProperties = () => {
             <div style={{boxShadow: "0 6px 8px rgba(0, 0, 0, 0.1)", borderRadius:'20px', paddingTop:'20px'}}>
 
 
-            <div className="row " style={{paddingInline:"20px"}}>
+            <div className="row hotel-list-padding">
               <div className="col-md-auto" >
                 <div className="cardImage ratio ratio-1:1 w-250 md:w-1/1 rounded-4"  >
                   <div className="cardImage__content" >
@@ -30,10 +30,10 @@ const HotelProperties = () => {
                         {item?.slideImg?.map((slide, i) => (
                           <SwiperSlide key={i}>
                             <img
-                              className="rounded-4 col-12 js-lazy"
+                              className="col-12 js-lazy"
                               src={slide}
                               alt="image"
-                              style={{height:'220px',width:"100%"}}
+                              style={{height:'220px',width:"100%", borderRadius:'20px'}}
                             />
                           </SwiperSlide>
                         ))}
@@ -81,7 +81,7 @@ const HotelProperties = () => {
               </div>
               {/* End .col-md */}
 
-              <div className="col-md-auto text-right md:text-left">
+              <div className="col-md-auto text-right md:text-left right-title-hotel">
                 <div className="row x-gap-10 y-gap-10 justify-end items-center md:justify-start">
                   <div className="col-auto">
                     <p className="text-18 lh-14 fw-500" style={{color:'#4f934f'}}>Excellent</p>
@@ -107,7 +107,7 @@ const HotelProperties = () => {
 
                   <Link
                     to={`/hotel-single/${item.id}`}
-                    className="button -md -dark-1 mt-2 text-white" style={{borderRadius:"10px", height:"30px",  background: "linear-gradient(90deg, rgb(97, 171, 97) 25%, rgb(73, 115, 73) 100%, rgb(73, 115, 73) 100%)"
+                    className="button -md -dark-1 mt-2 text-white  right-title-hotel-btn" style={{borderRadius:"10px", height:"30px",  background: "linear-gradient(90deg, rgb(97, 171, 97) 25%, rgb(73, 115, 73) 100%, rgb(73, 115, 73) 100%)", 
     }}
                   >
                     See Booking Option
