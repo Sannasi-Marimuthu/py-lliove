@@ -45,20 +45,13 @@ const LocationHome = () => {
           data-bs-auto-close="true"
           data-bs-offset="0,22"
         >
-          <span className="badge rounded-pill" style={{backgroundColor:"#4b5e4b", color:"#fff", }}>
+          <span className="badge rounded-pill location-badge" >
                  Location*
                     </span>
          
           <div
-            className="text-15  ls-2 lh-16"
-            style={{
-              backgroundColor: "#eff8f4",
-              padding: "5px",
-              borderRadius: "10px",
-              width: "auto",
-              color:"#4b5e4b"
-              
-            }}
+            className="text-15 ls-2 lh-16 location-input"
+           
           >
             <div className="d-flex items-center">
               <i

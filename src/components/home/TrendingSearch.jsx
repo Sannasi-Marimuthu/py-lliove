@@ -14,7 +14,7 @@ const TrendingSearch = () => {
 
       <div>
       
-      <div className="section" style={{ boxShadow: "0px 0px 5px 3px #686f68" }}>
+      <div className="section" style={{ boxShadow: "0px 0px 2px 2pxrgb(121, 122, 121)" }}>
          
            
         <div className="right">

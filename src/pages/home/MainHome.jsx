@@ -55,30 +55,26 @@ const MainHome = () => {
             <div className="top-left-text1">
               <div className="inner-text1 text-center1">
                 <h4
-                  style={{
-                    fontSize: "18px",
-                    textAlign: "center",
-                    color: "#536553",
-                  }}
+                  
                 >
                   Find the Top
                 </h4>
 
-                <h4 style={{ fontSize: "24px", color: "#536553" }}>
+                <p >
                   {" "}
                   Hotel Nearby
-                </h4>
+                </p>
               </div>
             </div>
 
             <div className="card-container1">
               <div className="card card1">
-                <div className="row w-100 m-0">
+                <div className="row  m-0 card-flex">
                   <div className="col">
                     <img
                       src="/img/home_icon/stay.png"
                       alt="Olliv Stay"
-                      width={20}
+                      
                     />
                     <span
                       className="badge rounded-pill"
@@ -91,7 +87,7 @@ const MainHome = () => {
                     <img
                       src="/img/home_icon/meet.png"
                       alt="Olliv Meet"
-                      width={30}
+                    
                     />
                     <span className="badge rounded-pill text-dark">
                       Olliv Meet
@@ -101,7 +97,7 @@ const MainHome = () => {
                     <img
                       src="/img/home_icon/fly.png"
                       alt="Olliv Fly"
-                      width={30}
+                  
                     />
                     <span className="badge rounded-pill text-dark">
                       Olliv Fly
@@ -111,7 +107,7 @@ const MainHome = () => {
                     <img
                       src="/img/home_icon/bus.png"
                       alt="Olliv Bus"
-                      width={30}
+                      
                     />
                     <span className="badge rounded-pill text-dark">
                       Olliv Bus
@@ -121,10 +117,10 @@ const MainHome = () => {
                     <img
                       src="/img/home_icon/medicare.png"
                       alt="Olliv Medicare"
-                      width={30}
+                     
                     />
                     <span className="badge rounded-pill text-dark">
-                      Olliv Medicare
+                      Olliv <br /> Medicare
                     </span>
                   </div>
                 </div>
@@ -141,29 +137,25 @@ const MainHome = () => {
       {/* Hero End */}
 
       {/* Search Box */}
-      <div className="container " style={{ marginTop: "5em" }}>
+      <div className="container top" >
         <div
           className="mainSearch main-search px-20 py-30 lg:px-10 lg:pt-5 lg:pb-20 "
-          style={{
-            borderRadius: "20px",
-            marginInline: "auto",
-            backgroundColor: "#fff",
-            boxShadow: "0 2px 3px 0px #686f68",
-            zIndex: "9",
-          }}
+          
         >
           <div className="">
-            <div className="d-flex items-center justify-content-evenly flex-wrap ">
+            <div className="search-bg">
+              <div className="d-flex items-center justify-content-evenly flex-wrap ">
               {/* LOcation start */}
               <LocationHome />
               {/* Location End */}
 
               {/* checkIn date start */}
-              <div className="searchMenu-date px-10 lg:py-20  sm:px-20 js-form-dd js-calendar d-flex flex-row flex-wrap gap-20 ">
+              <div className="date-search">
+                <div className="searchMenu-date px-10 lg:py-20  sm:px-20 js-form-dd js-calendar d-flex flex-row flex-wrap gap-20 ">
                 <div>
                   <span
-                    className="badge rounded-pill"
-                    style={{ backgroundColor: "#4b5e4b", color: "#fff" }}
+                    className="badge rounded-pill date-badge"
+                   
                   >
                     Check_In
                   </span>
@@ -175,13 +167,14 @@ const MainHome = () => {
               <div className="searchMenu-date px-10 lg:py-20  sm:px-20 js-form-dd js-calendar d-flex flex-row flex-wrap gap-20 ">
                 <div>
                   <span
-                    className="badge rounded-pill"
-                    style={{ backgroundColor: "#4b5e4b", color: "#fff" }}
+                    className="badge rounded-pill date-badge"
+                   
                   >
                     Check_Out
                   </span>
                   <DateSearch />
                 </div>
+              </div>
               </div>
 
               {/* checkOut date End */}
@@ -190,19 +183,13 @@ const MainHome = () => {
               <GuestSearch />
               {/* End Guests & rooms */}
             </div>
+            </div>
             {/* start see Booking  option*/}
             <div style={{ marginTop: "1.5em" }}>
               <Link
                 to={"/hotelList"}
-                className="button -md -dark-1 bg-blue-1 text-white"
-                style={{
-                  borderRadius: "10px",
-                  height: "30px",
-                  width: "250px",
-                  height: "50px",
-                  marginInline: "auto",
-                  marginBottom: "-4em",
-                }}
+                className="button -md -dark-1 bg-blue-1 text-white search-btn"
+               
               >
                 See Booking Option
               </Link>
@@ -213,16 +200,17 @@ const MainHome = () => {
       </div>
 
       {/* Trending Search At Py-Olliv */}
-      <div className="container " style={{ marginTop: "0em" }}>
+      <div className="container top1">
         <TrendingSearch />
       </div>
 
       {/* Popular hotels */}
-      <div className="container" style={{ marginTop: "5em" }}>
+      <div className="container top" >
         <div className="relative overflow-hidden  js-section-slider item_gap-x30">
           <Hotels />
         </div>
       </div>
+      
 
       {/* signature start */}
       <div className="container mt-5">

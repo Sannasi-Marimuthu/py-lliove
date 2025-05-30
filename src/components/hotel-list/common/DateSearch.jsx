@@ -8,7 +8,7 @@ const DateSearch = () => {
   ]);
 
   return (
-    <div className="text-15 text-light-1 ls-2 lh-16 custom_dual_datepicker list-date"  >
+    <div className="text-15 text-light-1 ls-2 lh-16 custom_dual_datepicker list-date date-input"  >
 
        <i
                 className="icon-calendar text-16 mr-5"
