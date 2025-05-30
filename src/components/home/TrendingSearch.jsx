@@ -3,14 +3,14 @@ import React from "react";
 const TrendingSearch = () => {
   return (
     <>
-   
+{/*    
       <svg width="0" height="0" aria-hidden="true" focusable="false">
         <defs>
           <clipPath id="waveClip2" clipPathUnits="objectBoundingBox">
             <path d="M0,1 C0.15,0.5 0.85,0.5 1,0 L1,0 L0,0 Z" />
           </clipPath>
         </defs>
-      </svg>
+      </svg> */}
 
       <div>
       
@@ -19,7 +19,7 @@ const TrendingSearch = () => {
            
         <div className="right">
           <img
-            src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg"
+            src="/img/gallery/hotel.png"
             alt="Hotel"
           />
         </div>

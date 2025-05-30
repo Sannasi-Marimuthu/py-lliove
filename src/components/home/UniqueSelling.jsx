@@ -19,7 +19,7 @@ const UniqueSelling = () => {
           </h1>
         </div>
 
-        <div className= "d-flex flex-row  y-gap-30 items-center justify-between mt-10 mx-auto flex-wrap mx-auto">
+        <div className= "d-flex flex-row  items-center justify-between mt-10 mx-auto flex-wrap mx-auto">
           {/* <div>
             <div className="d-flex justify-content-evenly">
               <h4
