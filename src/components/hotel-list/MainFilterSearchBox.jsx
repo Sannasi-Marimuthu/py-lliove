@@ -1,5 +1,5 @@
-import DateSearch from "./common/DateSearch";
-import GuestSearch from "./common/GuestSearch";
+import DateList from "./common/DateList";
+import GuestList from "./common/GuestList";
 import LocationSearch from "./common/LocationSearch";
 
 const MainFilterSearchBox = () => {
@@ -19,12 +19,12 @@ const MainFilterSearchBox = () => {
                 >
                   Check_In & Check_Out
                 </span>
-                <DateSearch />
+                <DateList />
               </div>
             </div>
             {/* End check-in-out */}
 
-            <GuestSearch />
+            <GuestList />
             {/* End guest */}
           </div>
         </div>

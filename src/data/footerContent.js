@@ -13,6 +13,7 @@ const footercontent = [
       { name: "Py Olliv on Mobile", routerPath: "/" },
       { name: "Py Olliv TV Advertisement.", routerPath: "/" },
       { name: "Technology Py Olliv", routerPath: "/" },
+      { name: "List Your Properties", routerPath: "/" },
     ],
   },
   {

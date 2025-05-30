@@ -11,7 +11,7 @@ const HotelProperties = () => {
         <div className="col-12" key={item?.id} >
           <div>
             
-            <div style={{boxShadow: "0 3px 5px 0px #686f68", borderRadius:'20px', paddingTop:'20px'}}>
+            <div style={{boxShadow: "0 6px 8px rgba(0, 0, 0, 0.1)", borderRadius:'20px', paddingTop:'20px'}}>
 
 
             <div className="row " style={{paddingInline:"20px"}}>
@@ -56,7 +56,7 @@ const HotelProperties = () => {
 
                 <div >
                   <p className="text-14">Free cancellation. <span> Breakfast included</span> </p>
-                  <p style={{color:"blue", fontSize:'12px'}} >&more</p>
+                  <p style={{color:"#4768a7", fontWeight:"bold", fontSize:'12px'}} >&more</p>
                 </div>
 
                 <div className=" lh-15 mt-10">
@@ -66,13 +66,13 @@ const HotelProperties = () => {
                 </div>
                 <div className="row x-gap-10 y-gap-10 mt-1">
                   <div className="col-auto">
-                    <p className=" rounded-100 px-5 text-16 lh-14" style={{color:"blue", border:"1px solid gray",paddingBlock:"3px"}}>
+                    <p className=" rounded-100 px-5 text-16 lh-14" style={{color:"#4768a7", fontWeight:"bold", border:"1px solid #4768a7",paddingBlock:"3px"}}>
                       #classic
                     </p>
                   </div>
 
                   <div className="col-auto">
-                    <p className=" rounded-100  px-5 text-16 lh-14" style={{color:"blue", border:"1px solid gray",paddingBlock:"3px"}}>
+                    <p className=" rounded-100  px-5 text-16 lh-14" style={{color:"#4768a7", fontWeight:"bold", border:"1px solid #4768a7",paddingBlock:"3px"}}>
                       #excutive
                     </p>
                   </div>
