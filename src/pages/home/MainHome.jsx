@@ -11,11 +11,19 @@ import { Link } from "react-router-dom";
 import LocationHome from "../../components/hotel-list/common/LocationHome";
 import TrendingSearch from "../../components/home/TrendingSearch";
 import UniqueSelling from "../../components/home/UniqueSelling";
+import MobileNavbar from "../../components/navbar/MobileNavbar";
 
 const MainHome = () => {
   return (
-    <div style={{ backgroundColor: "#ecf0f7" }}>
+    <>
+
+    <div className="mobbile-nav">
+      <MobileNavbar />
+    </div>
+    <div className="mainHome">
       <Navbar />
+    
+
       {/* Hero start */}
       <div style={{ marginTop: "2em" }} className="container">
         <svg width="0" height="0" aria-hidden="true" focusable="false">
@@ -247,6 +255,7 @@ const MainHome = () => {
       </div>
       <DefaultFooter />
     </div>
+    </>
   );
 };
 
