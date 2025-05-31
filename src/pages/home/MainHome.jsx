@@ -186,8 +186,8 @@ const MainHome = () => {
         </div>
 
         {/* signature start */}
-        <div className="container top">
-          <div className="relative overflow-hidden js-section-slider item_gap-x30">
+        <div className="container top1">
+          <div className="relative overflow-hidden js-section-slider ">
             <Signature />
           </div>
         </div>

@@ -34,24 +34,96 @@ const MobileMenu = () => {
             onClick={() => navigate("/")}
             className={pathname === "/" ? "menu-active-link" : ""}
           >
-            Properties
+            <li className={pathname === "/#" ? "current" : ""}>
+              <div className="d-flex justify-content-start align-items-center gap-5 ">
+                <img
+                  src="/img/home_icon/stay.png"
+                  alt="Olliv Stay"
+                  width={40}
+                />
+                <span
+                  className="badge rounded-pill"
+                  style={{ backgroundColor: "#4b5e4b", color: "#fff" }}
+                >
+                  Olliv Stay
+                </span>
+              </div>
+            </li>
+            {/* End Properties single menu */}
           </MenuItem>
           {/* End  Desitinations Menu */}
           <MenuItem
             onClick={() => navigate("/#")}
             className={pathname === "/#" ? "menu-active-link" : ""}
           >
-            Attractions
+            <li
+              className={pathname === "/#" ? "current" : ""}
+              style={{ marginTop: "30px" }}
+            >
+              <div className="d-flex justify-content-start align-items-center gap-5 ">
+                <img
+                  src="/img/home_icon/meet.png"
+                  alt="Olliv Meet"
+                  width={40}
+                />
+                <span className="badge rounded-pill text-dark">Olliv Meet</span>
+              </div>
+            </li>
           </MenuItem>
           {/* End  Desitinations Menu */}
           <MenuItem
             onClick={() => navigate("/#")}
             className={pathname === "/#" ? "menu-active-link" : ""}
           >
-            Popular
+            <li
+              className={pathname === "/#" ? "current" : ""}
+              style={{ marginTop: "30px" }}
+            >
+              <div className="d-flex justify-content-start align-items-center gap-5 ">
+               < img src="/img/home_icon/fly.png" alt="Olliv Fly" width={40}/>
+                <span className="badge rounded-pill text-dark">Olliv Fly</span>
+              </div>
+            </li>
           </MenuItem>
           {/* End  Desitinations Menu */}
-        
+
+          <MenuItem
+            onClick={() => navigate("/#")}
+            className={pathname === "/#" ? "menu-active-link" : ""}
+          >
+            <li
+              className={pathname === "/#" ? "current" : ""}
+              style={{ marginTop: "30px" }}
+            >
+              <div className="d-flex justify-content-start align-items-center gap-5 ">
+                <img src="/img/home_icon/bus.png" alt="Olliv Bus" width={40} />
+                <span className="badge rounded-pill text-dark">Olliv Bus</span>
+              </div>
+            </li>
+          </MenuItem>
+          {/* End  Desitinations Menu */}
+
+          <MenuItem
+            onClick={() => navigate("/#")}
+            className={pathname === "/#" ? "menu-active-link" : ""}
+          >
+            <li
+              className={pathname === "/#" ? "current" : ""}
+              style={{ marginTop: "30px" }}
+            >
+              <div className="d-flex justify-content-start align-items-center gap-5 ">
+                <img
+                  src="/img/home_icon/medicare.png"
+                  alt="Olliv Medicare"
+                  width={40}
+                />
+                <span className="badge rounded-pill text-dark">
+                  Olliv Medicare
+                </span>
+              </div>
+            </li>
+          </MenuItem>
+          {/* End  Desitinations Menu */}
         </Menu>
       </Sidebar>
     </>

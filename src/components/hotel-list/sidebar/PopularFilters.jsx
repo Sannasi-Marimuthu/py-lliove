@@ -1,6 +1,6 @@
 const popularFilters = () => {
   const filters = [
-    { label: "GoStays", count: 58 },
+    { label: "OllivStay", count: 58 },
     { label: "Book @ 0 ", count: 815 },
     { label: "Flexible Check In", count: 26 },
     { label: "Daily Steal Deal ", count: 66 },

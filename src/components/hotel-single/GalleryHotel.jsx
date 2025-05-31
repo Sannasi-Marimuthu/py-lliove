@@ -40,7 +40,7 @@ export default function GalleryHotel({ hotel }) {
                           onClick={open}
                           alt="image"
                           role="button"
-                          className="rounded-4"
+                          style={{borderRadius:'20px'}}
                         />
                       )}
                     </Item>
@@ -61,7 +61,7 @@ export default function GalleryHotel({ hotel }) {
                           onClick={open}
                           src="https://thumbs.dreamstime.com/b/hotel-room-beautiful-orange-sofa-included-43642330.jpg"
                           alt="image"
-                          className="rounded-4"
+                          style={{borderRadius:'20px'}}
                           role="button"
                         />
                       )}
@@ -82,7 +82,7 @@ export default function GalleryHotel({ hotel }) {
                           onClick={open}
                           src="https://media.istockphoto.com/id/1392171961/photo/portrait-of-an-asian-tourist-woman-standing-nearly-window-looking-to-beautiful-view-with-her.jpg?s=612x612&w=0&k=20&c=Q4GVjzoG10bpmXW4GzbdFtOhpjbkTD1U3HN_yfCZ6t8="
                           alt="image"
-                          className="rounded-4"
+                          style={{borderRadius:'20px'}}
                           role="button"
                         />
                       )}
@@ -94,7 +94,7 @@ export default function GalleryHotel({ hotel }) {
                     <img
                       src="https://media.istockphoto.com/id/452626285/photo/hong-kong-hotel-room.jpg?s=612x612&w=0&k=20&c=AibmfrXuTm6pWDV6wvI-X9OEakdMyQKhrDoCR2mgUZ8="
                       alt="image"
-                      className="rounded-4"
+                     style={{borderRadius:'20px'}}
                     />
                     <div className="absolute px-10 py-10 col-12 h-full d-flex justify-end items-end">
                       <Item

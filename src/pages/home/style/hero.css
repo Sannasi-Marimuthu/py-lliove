@@ -480,24 +480,27 @@
 /* signature start */
 
 .title-sign {
-  font-size: 3.5em;
+  font-size: 4rem;
   text-align: center;
-  margin-top: 20px;
   color: rgb(31, 29, 29);
+  font-weight: normal;
   font-family: "ClainaVanie", cursive;
 }
 
 .swiper-container {
-  width: 75%;
-  margin-inline: auto;
+  width: 100%;
+  /* margin-inline: auto; */
+}
+.sign-swiper {
+  margin-top: -2em;
 }
 .signature-card {
-  width: 325px;
-  height: 450px;
-  border-radius: 25px;
+  width:400px;
+  height: 500px;
+  border-radius:  40px 40px 100px 40px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
   font-family: sans-serif;
 
   margin-block-end: 20px;
@@ -507,35 +510,43 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px 0 0 20px;
 }
 
+
+/* .slide-content{
+  width: 432px;
+  height: 550px;
+} */
 .wave {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 50%;
+  height:47%;
   background-color: #ffddab;
   clip-path: url(#wave-clip);
   z-index: 1;
 }
-
 .wave-text {
   position: absolute;
-  bottom: 5px;
-  left: 20px;
+  bottom: 20px;
   color: #703b0b;
   z-index: 2;
-  margin-left: 11rem;
+  margin-left: 15rem;
+    
 }
 
 .wave-text h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  
 }
 
 .wave-text p {
-  font-size: 16px;
-  color: #703b0b;
+ 
+    font-size: 20px;
+    color: #703b0b;
+    margin-top: -.5em;
 }
 
 .swiper-slide-shadow-left,
@@ -548,10 +559,11 @@
   }
   .signature-card {
     width: 100%;
-    height: 350px;
+    height: 500px;
+    border-radius: 40px 40px 80px 40px;
   }
   .wave-text {
-    margin-left: 9rem;
+    margin-left: 12rem;
   }
 }
 /* signature end */

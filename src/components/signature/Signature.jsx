@@ -14,13 +14,13 @@ const Signature = () => {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-         pagination={{
-          dynamicBullets: true,
-        }}
-          autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+          pagination={{
+            dynamicBullets: true,
+          }}
+            autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -28,8 +28,7 @@ const Signature = () => {
             modifier: 4,
             slideShadows: true,
           }}
-          
-          modules={[EffectCoverflow,Autoplay,Pagination]}
+          modules={[EffectCoverflow, Autoplay, Pagination]}
           breakpoints={{
             560: {
               slidesPerView: 2.5,
@@ -44,11 +43,7 @@ const Signature = () => {
           className="sign-swiper"
         >
           {signatureData.slice(0, 5).map((item) => (
-            <SwiperSlide
-              key={item?.id}
-              className="swiper-slide"
-              
-            >
+            <SwiperSlide key={item?.id} className="swiper-slide">
               {/* <Link
                 to={`/#`}
                 className="hotelsCard -type-1 hover-inside-slider"
@@ -66,19 +61,17 @@ const Signature = () => {
 
                 <div className="signature-card">
                   {item?.slideImg?.map((slide, i) => (
-                    <img className="rounded-4  js-lazy" src={slide} />
+                    <img className="  js-lazy" src={slide} />
                   ))}
 
                   <div class="wave"></div>
                   <div class="wave-text">
                     <h4>{item?.title}</h4>
                     <p>
-                      {item?.para1}
-                      <br />
-                      <span style={{ marginBottom: "-5px" }}>
-                        {" "}
-                        {item?.para2}
-                      </span>
+                      {item?.para1} 
+                    </p>
+                    <p>
+                     {item?.para2}
                     </p>
                   </div>
                 </div>

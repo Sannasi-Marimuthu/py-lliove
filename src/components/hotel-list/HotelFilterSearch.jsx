@@ -92,7 +92,7 @@ const HotelFilterSearchBox = () => {
               <button
                 className="list-search-btn d-flex  px-40 h-full col-4 justify-content-end"
                 style={{
-                  border: "1px solid black",
+                     boxShadow: " -2px 5px 10px rgb(177, 184, 181)",
                   width: "fit-content",
                   height: "30px",
                   borderRadius: "30px",
