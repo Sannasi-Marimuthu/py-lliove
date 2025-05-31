@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
-.mainHome{
-  background-color:#ecf0f7
+.mainHome {
+  background-color: #ecf0f7;
 }
-
-
 
 .hero-section1 {
   width: 100%;
@@ -53,29 +51,57 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  border-radius: 50px;
+  border-radius: 40px;
 }
 
 .top-left-text1 {
   position: absolute;
-  top: 0;
+  /* top: 0;
   left: 0;
   width: 252px;
-  height: 238px;
-  background: white;
-  color: #2f4f4f;
+  height: 238px; */
+  /* background: white; */
+  /* color: #2f4f4f;
   font-weight: bold;
   font-size: 1.2rem;
   padding: 30px 20px;
   z-index: 11;
+  line-height: 1.5rem; */
+  /* clip-path: url(#waveClip); */
+  /* border-radius: 50px 0 0 0;
+  box-shadow: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(76, 94, 76, 1) 100%
+  );
+    background-image: url(/img/gallery/video_bg.svg);
+    object-fit: cover;
+    object-position: left center;
+    background-repeat: no-repeat; */
+  /* background-size: cover; */
+
+  top: -3px;
+  left: -4px;
+  width: 330px;
+  height: 238px;
+  /* background: white; */
+  color: #2f4f4f;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 26px 20px;
+  z-index: 11;
   line-height: 1.5rem;
-  clip-path: url(#waveClip);
+  /* clip-path: url(#waveClip); */
   border-radius: 50px 0 0 0;
   box-shadow: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(76, 94, 76, 1) 100%
   );
+  background-image: url(/img/gallery/video_bg.svg);
+  object-fit: cover;
+  object-position: left center;
+  background-repeat: no-repeat;
 }
 .inner-text1 h4 {
   font-size: 18px;
@@ -104,7 +130,7 @@
   max-width: 90vw;
   padding: 10px;
   background-image: linear-gradient(to bottom right, #fff, #e2e7f2);
-   box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.08);
   border-radius: 30px;
   display: flex;
   justify-content: space-around;
@@ -207,12 +233,20 @@
   .top-left-text1 {
     width: 220px;
     height: 180px;
+    padding: 15px 10px;
+    background-image: url(/img/gallery/video_mob.svg);
+    object-fit: cover;
+    object-position: left center;
+    background-repeat: no-repeat;
   }
   .inner-text1 h4 {
-    font-size: 14px;
+    font-size: 8px;
   }
   .inner-text1 p {
-    font-size: 18px;
+    font-size: 12px;
+  }
+  .date-search{
+    margin-inline: 30px;
   }
   .card1 {
     position: static;
@@ -396,7 +430,6 @@
     padding: 40px 20px;
     padding-bottom: 0px;
     background-color: #f9fff9;
-
   }
   .item {
     width: 300px;
@@ -466,7 +499,7 @@
   position: relative;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   font-family: sans-serif;
-  
+
   margin-block-end: 20px;
 }
 
@@ -546,10 +579,9 @@
     font-size: 22px;
   }
   .unique-item {
-        width: 300px;
-        padding-top: 0px;
-        margin-inline: 3px;
-    
+    width: 300px;
+    padding-top: 0px;
+    margin-inline: 3px;
   }
   .unique-right {
     padding-top: 0px;

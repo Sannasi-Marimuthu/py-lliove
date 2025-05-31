@@ -23,8 +23,8 @@ const MainHome = () => {
         <Navbar />
 
         {/* Hero start */}
-        <div style={{ marginTop: "2em" }} className="container">
-          <svg width="0" height="0" aria-hidden="true" focusable="false">
+        <div style={{ marginTop: "5em" }} className="container">
+          {/* <svg width="0" height="0" aria-hidden="true" focusable="false">
             <defs>
               <clipPath id="waveClip" clipPathUnits="objectBoundingBox">
                 <path d="M0,1 C0.15,0.5 0.85,0.5 1,0 L1,0 L0,0 Z" />
@@ -45,7 +45,9 @@ const MainHome = () => {
                 />
               </filter>
             </defs>
-          </svg>
+          </svg> */}
+
+          {/* <img src="/img/gallery/video_bg.svg" alt="video_bg" id="waveClip" /> */}
 
           <div className="hero-section1">
             <div className="content-overlay1">
