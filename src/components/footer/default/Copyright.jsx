@@ -1,6 +1,5 @@
 
 import { Link } from "react-router-dom";
-import AppButton from "./AppButton";
 
 const Copyright = () => {
   return (
@@ -25,6 +24,10 @@ const Copyright = () => {
           </Link>
           <Link to="#">
           <img src="/img/footer/twitter.png" alt="youtube" width={30} />
+           
+          </Link>
+          <Link to="#">
+          <img src="/img/footer/Linkedin.png" alt="youtube" width={40} style={{marginTop:"-5px"}}  />
            
           </Link>
           

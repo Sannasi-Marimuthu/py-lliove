@@ -71,6 +71,30 @@ const Navbar = () => {
               <div className="d-flex items-center ml-20 is-menu-opened-hide md:d-none">
                 {/* Start btn-group */}
                 <div className="header__buttons d-flex items-center is-menu-opened-hide mt-30">
+                  
+                   <Link
+                    to="/signup"
+                    className="h-50 fw-400 text-14 -blue-1 text-dark-1 sm:d-none "
+                  >
+                    <img
+                      src="/img/footer/playstore-icon.png"
+                      alt=""
+                      style={{ width: "25px", marginRight:"25px" }}
+                    />
+                    {/* Sign In */}
+                  </Link>
+                  <Link
+                    to="/signup"
+                    className="h-50 fw-400 text-14 -blue-1 text-dark-1 sm:d-none"
+                  >
+                    <img
+                      src="/img/footer/apple-icon1.png"
+                      alt=""
+                      style={{ width: "25px", marginRight:"5px"  }}
+                    />
+                    {/* Sign In */}
+                  </Link>
+                  
                   <Link
                     to="/#"
                     className=" h-50 px-20 fw-400 text-14 -blue-1 text-dark-1 sm:d-none"
@@ -93,28 +117,7 @@ const Navbar = () => {
                     />
                     Sign In
                   </Link>
-                  <Link
-                    to="/signup"
-                    className="h-50 fw-400 text-14 -blue-1 text-dark-1 sm:d-none "
-                  >
-                    <img
-                      src="/img/footer/playstore-icon.png"
-                      alt=""
-                      style={{ width: "25px", marginLeft:"15px" }}
-                    />
-                    {/* Sign In */}
-                  </Link>
-                  <Link
-                    to="/signup"
-                    className="h-50 fw-400 text-14 -blue-1 text-dark-1 sm:d-none"
-                  >
-                    <img
-                      src="/img/footer/apple-icon.png"
-                      alt=""
-                      style={{ width: "30px", marginLeft:"15px"  }}
-                    />
-                    {/* Sign In */}
-                  </Link>
+                 
                 </div>
                 {/* End btn-group */}
               </div>
