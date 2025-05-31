@@ -93,6 +93,28 @@ const Navbar = () => {
                     />
                     Sign In
                   </Link>
+                  <Link
+                    to="/signup"
+                    className="h-50 fw-400 text-14 -blue-1 text-dark-1 sm:d-none "
+                  >
+                    <img
+                      src="/img/footer/playstore-icon.png"
+                      alt=""
+                      style={{ width: "25px", marginLeft:"15px" }}
+                    />
+                    {/* Sign In */}
+                  </Link>
+                  <Link
+                    to="/signup"
+                    className="h-50 fw-400 text-14 -blue-1 text-dark-1 sm:d-none"
+                  >
+                    <img
+                      src="/img/footer/apple-icon.png"
+                      alt=""
+                      style={{ width: "30px", marginLeft:"15px"  }}
+                    />
+                    {/* Sign In */}
+                  </Link>
                 </div>
                 {/* End btn-group */}
               </div>

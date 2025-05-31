@@ -1,37 +1,51 @@
 
+import { Link } from "react-router-dom";
 import AppButton from "./AppButton";
 
 const Copyright = () => {
   return (
     <div className=" d-flex flex-row justify-content-between flex-wrap">
       <div className="d-flex flex-column">
-        <h5 className="text-18 fw-500 mb-5">Follow Us</h5>
+        <h5 className="text-18 fw-500 mb-5 text-center">Follow Us</h5>
         <div className="d-flex flex-row justify-content-between">
           
           <div className="d-flex flex-row gap-3  mt-2">
          
-          <a href="#">
-            <i className="icon icon-instagram" style={{fontSize:"25px", color:"#4b5e4b"}}></i>
-          </a>
-          <a href="#">
-            <i className="icon icon-facebook" style={{fontSize:"25px", color:"#4b5e4b"}}></i>
-          </a>
-          <a href="#">
-            <i className="icon icon-twitter" style={{fontSize:"25px", color:"#4b5e4b"}}></i>
-          </a>
-           <a href="#">
-            <i className="icon icon-youtube" style={{fontSize:"25px", color:"#4b5e4b"}}></i>
-          </a>
+          <Link to="#">
+          <img src="/img/footer/youtube.png" alt="youtube" width={40} />
+           
+          </Link>
+          <Link to="#">
+          <img src="/img/footer/insta.png" alt="youtube" width={30} />
+           
+          </Link>
+          <Link to="#">
+          <img src="/img/footer/facebook.png" alt="youtube" width={30} />
+           
+          </Link>
+          <Link to="#">
+          <img src="/img/footer/twitter.png" alt="youtube" width={30} />
+           
+          </Link>
+          
          
         </div>
         </div>
       </div>
       <div className="d-flex flex-column mt-2">
         <h5 className="text-18 fw-500 mb-5">
-          Book tickets faster.Downloded our mobile Apps
+          Book faster.Downloded our mobile Apps
         </h5>
         <div className="d-flex justify-content-between ">
-          <AppButton />
+          <Link to="#">
+          <img src="/img/footer/playstore.png" alt="youtube" width={150} />
+           
+          </Link>
+          <Link to="#">
+          <img src="/img/footer/applestore.png" alt="youtube" width={164} />
+           
+          </Link>
+          {/* <AppButton /> */}
         </div>
       </div>
       <div className="d-flex flex-column mt-2">

@@ -26,7 +26,6 @@ const footercontent = [
       { name: "Bus Booking", routerPath: "/" },
       { name: "Domestic Flights", routerPath: "/" },
       { name: "International Flights", routerPath: "/" },
-      { name: "Train Ticket Booking", routerPath: "/" },
     ],
   },
   {
@@ -52,7 +51,6 @@ const footercontent = [
       { name: "Medical Stay", routerPath: "/" },
       { name: "Popular Hotel Chains", routerPath: "/" },
       { name: "Popular Bus Cities", routerPath: "/" },
-      { name: "Train Running Status", routerPath: "/" },
       { name: "Flight Schedule", routerPath: "/" },
       { name: "Airports in India", routerPath: "/" },
     ],
