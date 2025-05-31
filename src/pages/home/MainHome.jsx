@@ -125,7 +125,7 @@ const MainHome = () => {
           <div className="mainSearch main-search px-20 py-30 lg:px-10 lg:pt-5 lg:pb-20 ">
             <div className="">
               <div className="search-bg">
-                <div className="d-flex items-center justify-content-evenly flex-wrap ">
+                <div className="search-input">
                   {/* LOcation start */}
                   <LocationHome />
                   {/* Location End */}
