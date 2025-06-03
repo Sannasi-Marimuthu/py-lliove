@@ -22,6 +22,8 @@ import SignUp from "./pages/others/signup";
 import HotelList from "./pages/hotel/hotel-list/index";
 import HotelSingleDynamic from "./pages/hotel/hotel-single";
 import Contact from "./pages/others/contact";
+import MeetHome from "./pages/home/ollivMeet/MeetHome";
+import MeetList from "./pages/meet/meet-list";
 
 // import NotFoundPage from "./pages/not-found";
 // import BookingPage from "./pages/hotel/booking-page";
@@ -48,6 +50,8 @@ function App() {
               <Route path="hotelList" element={<HotelList />} />
               <Route path="hotel-single/:id" element={<HotelSingleDynamic />} />
               <Route path="contact" element={<Contact />} />
+              <Route path="olliv-meet" element={ <MeetHome />} />
+              <Route path="meetList" element={<MeetList />} />
 
               {/*      <Route path="blog-list-v1" element={<BlogListV1 />} />
               <Route path="blog-list-v2" element={<BlogListV2 />} />

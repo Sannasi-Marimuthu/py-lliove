@@ -1,19 +1,18 @@
 // import React from "react";
-import DefaultFooter from "../../components/footer/default";
-import DateSearch from "../../components/hotel-list/common/DateSearch";
-import GuestSearch from "../../components/hotel-list/common/GuestSearch";
-import Hotels from "../../components/hotels/Hotels";
-import Navbar from "../../components/navbar/Navbar";
-import Signature from "../../components/signature/Signature";
-import "./style/hero.css";
-import "../../assets/fonts/font.css";
+import DefaultFooter from "../../../components/footer/default/index";
+import Hotels from "../../../components/hotels/Hotels";
+import Navbar from "../../../components/navbar/Navbar";
+import Signature from "../../../components/signature/Signature";
+import "../style/hero.css";
+import "../../../assets/fonts/font.css";
 import { Link } from "react-router-dom";
-import LocationHome from "../../components/hotel-list/common/LocationHome";
-import TrendingSearch from "../../components/home/TrendingSearch";
-import UniqueSelling from "../../components/home/UniqueSelling";
-import MobileNavbar from "../../components/navbar/MobileNavbar";
+import TrendingSearch from "../../../components/home/TrendingSearch";
+import UniqueSelling from "../../../components/home/UniqueSelling";
+import MobileNavbar from "../../../components/navbar/MobileNavbar";
+import LocationMeet from "../../../components/hotel-list/common/meet/LocationMeet";
+import DateMeet from "./DateMeet";
 
-const MainHome = () => {
+const MeetHome = () => {
   return (
     <>
       <div className="mobbile-nav">
@@ -73,26 +72,24 @@ const MainHome = () => {
                   <div className="row  m-0 card-flex">
                     <div className="col">
                       <Link to="/">
-                        <img src="/img/home_icon/stay.png" alt="Olliv Stay" />
+                      <img src="/img/home_icon/stay.png" alt="Olliv Stay" />
                       <span
-                        className="badge rounded-pill " style={{ backgroundColor: "#4b5e4b", color: "#fff" }}
-                        
+                        className="badge rounded-pill text-dark"
+                       
                       >
                         Olliv Stay
                       </span>
                       </Link>
                     </div>
                     <div className="col">
-                      <Link to="olliv-meet">
                       <img src="/img/home_icon/meet.png" alt="Olliv Meet" />
-                      <span className="badge rounded-pill  text-dark" >
+                      <span className="badge rounded-pill"  style={{ backgroundColor: "#4b5e4b", color: "#fff" }}>
                         Olliv Meet
                       </span>
-                      </Link>
                     </div>
                     <div className="col">
                       <img src="/img/home_icon/fly.png" alt="Olliv Fly" />
-                      <span className="badge rounded-pill text-dark">
+                      <span className="badge rounded-pill  text-dark" >
                         Olliv Fly
                       </span>
                     </div>
@@ -121,6 +118,7 @@ const MainHome = () => {
               </div>
             </div>
           </div>
+          
         </div>
         {/* Hero End */}
 
@@ -131,7 +129,7 @@ const MainHome = () => {
               <div className="search-bg">
                 <div className="search-input">
                   {/* LOcation start */}
-                  <LocationHome />
+                  <LocationMeet />
                   {/* Location End */}
 
                   {/* checkIn date start */}
@@ -139,39 +137,32 @@ const MainHome = () => {
                     <div className="searchMenu-date px-10 lg:py-20  sm:px-20 js-form-dd js-calendar d-flex flex-row flex-wrap gap-20 ">
                       <div>
                         <span className="badge rounded-pill date-badge">
-                          Check_In
+                          Event Date
                         </span>
-                        <DateSearch />
+                        <DateMeet />
                       </div>
                     </div>
                     {/* checkIn date end */}
                     {/* checkOut date start */}
-                    <div className="searchMenu-date px-10 lg:py-20  sm:px-20 js-form-dd js-calendar d-flex flex-row flex-wrap gap-20 ">
-                      <div>
-                        <span className="badge rounded-pill date-badge">
-                          Check_Out
-                        </span>
-                        <DateSearch />
-                      </div>
-                    </div>
+                    
                   </div>
 
                   {/* checkOut date End */}
-
-                  {/* Start Guests & rooms */}
-                  <GuestSearch />
-                  {/* End Guests & rooms */}
+                <div className="mt-20">
+                   <Link
+                  to="/meetList"
+                  className="-md -dark-1 bg-blue-1 text-white search-btn1" 
+                >
+                  Search
+                </Link>
+                </div>
+                 <div>
+               
+              </div>
                 </div>
               </div>
               {/* start see Booking  option*/}
-              <div style={{ marginTop: "1.5em" }}>
-                <Link
-                  to={"/hotelList"}
-                  className="button -md -dark-1 bg-blue-1 text-white search-btn"
-                >
-                  See Booking Option
-                </Link>
-              </div>
+              
               {/* end see booking option */}
             </div>
           </div>
@@ -229,4 +220,4 @@ const MainHome = () => {
   );
 };
 
-export default MainHome;
+export default MeetHome;

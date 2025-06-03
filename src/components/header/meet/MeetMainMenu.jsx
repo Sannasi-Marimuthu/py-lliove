@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
-const MainMenu = ({ style = "" }) => {
+const MeetMainMenu = ({ style = "" }) => {
   const { pathname } = useLocation();
 
   return (
@@ -10,29 +10,26 @@ const MainMenu = ({ style = "" }) => {
         
 
         <li className={pathname === "/#" ? "current" : ""} style={{marginRight:"30px"}}>
-           <Link to="/hotelList" >
-            <div className="d-flex flex-column justify-content-center align-items-center gap-1 ">
-                      <img src="/img/home_icon/stay.png" alt="Olliv Stay" width={40}/>
-                      <span
-                        className="badge rounded-pill"
-                        style={{ backgroundColor: "#4b5e4b", color: "#fff" }}
-                      >
-                        Olliv Stay
+            <Link to="/hotelList" >
+            <div className="d-flex flex-column justify-content-center align-items-center gap-1">
+                      <img src="/img/home_icon/stay.png" alt="Olliv Meet" width={40} />
+                      <span className="badge rounded-pill text-dark">
+                        Olliv stay
                       </span>
                     </div>
-           </Link>
+          </Link>
         </li>
         {/* End Properties single menu */}
 
          <li className={pathname === "/#" ? "current" : ""} style={{marginRight:"30px"}}>
-          <Link to="/meetList" >
-            <div className="d-flex flex-column justify-content-center align-items-center gap-1">
+         <Link to="/meetList" >
+             <div className="d-flex flex-column justify-content-center align-items-center gap-1">
                       <img src="/img/home_icon/meet.png" alt="Olliv Meet" width={50} />
-                      <span className="badge rounded-pill text-dark">
+                      <span className="badge rounded-pill " style={{ backgroundColor: "#4b5e4b", color: "#fff" }}>
                         Olliv Meet
                       </span>
                     </div>
-          </Link>
+         </Link>
         </li>
         {/* End Attractions single menu */}
 
@@ -74,7 +71,7 @@ const MainMenu = ({ style = "" }) => {
   );
 };
 
-export default MainMenu;
+export default MeetMainMenu;
 
 
 

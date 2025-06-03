@@ -226,6 +226,14 @@
   margin-bottom: -4em;
 }
 
+.search-btn1 {
+  border-radius: 10px;
+  height: 30px;
+  width: 250px;
+  height: 50px;
+  padding:10px 40px;
+  margin-top: 20px !important;
+}
 @media (max-width: 767px) {
   .hero-section1 {
     height: 400px;
